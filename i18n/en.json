@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sam Wilson"
+		]
+	},
+	"redirectmanager-desc": "Manage a page's redirects from within the editing form.",
+	"redirectmanager-title": "Redirect Manager",
+	"redirectmanager-close": "Close",
+	"redirectmanager-newredirect-field": "Add new redirect:",
+	"redirectmanager-newredirect-button": "Add",
+	"redirectmanager-redirect-page-exists": "The requested redirect already exists. Please edit it manually.",
+	"redirectmanager-no-target": "The requested target of this redirect ('$1') does not exist.",
+	"redirectmanager-edit-summary": "Redirect added via the RedirectManager dialog.",
+	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager-description": "Redirects added by the RedirectManager dialog.",
+	"redirectmanager-existing-redirects": "Existing redirects to $1:",
+	"redirectmanager-no-redirects-found": "No redirects found.",
+	"redirectmanager-copy-to-clipboard": "Copy",
+	"redirectmanager-copied-to-clipboard": "Copied!"
+}

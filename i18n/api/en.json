@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sam Wilson"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Manage redirects to pages (with the [[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager extension]]).",
+	"apihelp-redirectmanager-param-redirect": "The name of the redirect, the source page name.",
+	"apihelp-redirectmanager-param-target": "The page to which the redirect will point, the destination page name.",
+	"apihelp-redirectmanager-example-1": "Redirect a Manual of Style shortcut to its actual page."
+}

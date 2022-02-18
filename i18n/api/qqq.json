@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sam Wilson"
+		]
+	},
+	"apihelp-redirectmanager-summary": "{{doc-apihelp-summary|redirectmanager}}",
+	"apihelp-redirectmanager-param-redirect": "{{doc-apihelp-param|redirectmanager|redirect}}",
+	"apihelp-redirectmanager-param-target": "{{doc-apihelp-param|redirectmanager|target}}",
+	"apihelp-redirectmanager-example-1": "{{doc-apihelp-example|redirectmanager}}"
+}
