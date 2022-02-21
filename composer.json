@@ -16,6 +16,9 @@
 		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-redirectmanager/",
 		"source": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RedirectManager"
 	},
+	"require": {
+		"composer/installers": "^1.0"
+	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "38.0.0",
 		"mediawiki/minus-x": "1.1.1",
@@ -24,6 +27,7 @@
 	},
 	"scripts": {
 		"test": [
+			"composer validate",
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"@phpcs",
 			"minus-x check ."
