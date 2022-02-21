@@ -12,6 +12,6 @@ class Hooks implements EditPage__showEditForm_initialHook {
 	 * @inheritDoc
 	 */
 	public function onEditPage__showEditForm_initial( $editor, $out ) {
-		$out->addModules( [ 'ext.RedirectManager' ] );
+		$out->addModules( [ 'ext.RedirectManager', 'ext.RedirectManager.images' ] );
 	}
 }

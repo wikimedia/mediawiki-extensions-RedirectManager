@@ -10,7 +10,6 @@
 				redirectmanager: {
 					type: 'button',
 					label: mw.msg( 'redirectmanager-title' ),
-					oouiIcon: 'articleRedirect',
 					action: {
 						type: 'callback',
 						execute: function () {
@@ -20,5 +19,7 @@
 				}
 			}
 		} );
+		// Add a class to our new button, because WikiEditor doesn't have a better way.
+		document.querySelector( '.tool[rel="redirectmanager"]' ).classList.add( 'ext-redirectmanager-image-toolbaricon' );
 	} );
 }() );

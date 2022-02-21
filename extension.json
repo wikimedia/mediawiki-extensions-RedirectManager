@@ -60,6 +60,13 @@
 				"init.js",
 				"RedirectManager.js"
 			]
+		},
+		"ext.RedirectManager.images": {
+			"class": "ResourceLoaderImageModule",
+			"selector": ".ext-redirectmanager-image-{name}",
+			"images": {
+				"toolbaricon": "redirectmanager.svg"
+			}
 		}
 	},
 	"APIModules": {
