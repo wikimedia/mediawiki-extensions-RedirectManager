@@ -7,6 +7,7 @@
 	"descriptionmsg": "redirectmanager-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
+	"version": "0.1.0",
 	"requires": {
 		"MediaWiki": ">= 1.37.0"
 	},

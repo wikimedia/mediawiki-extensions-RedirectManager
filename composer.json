@@ -1,4 +1,21 @@
 {
+	"name": "samwilson/redirectmanager",
+	"description": "MediaWiki extension for viewing and adding redirects to a page while editing.",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:RedirectManager",
+	"type": "mediawiki-extension",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Sam Wilson",
+			"email": "sam@samwilson.id.au",
+			"homepage": "https://samwilson.id.au",
+			"role": "developer"
+		}
+	],
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-redirectmanager/",
+		"source": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RedirectManager"
+	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "38.0.0",
 		"mediawiki/minus-x": "1.1.1",
