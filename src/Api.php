@@ -19,19 +19,20 @@ class Api extends ApiBase {
 	}
 
 	public function execute() {
+		// Get and check the redirect/source page name and permission.
+		$redirect = $this->getParameter( 'redirect' );
+		$redirectTitle = Title::newFromText( $redirect );
+		if ( $redirectTitle->exists() ) {
+			$this->addError( 'redirectmanager-redirect-page-exists' );
+			return;
+		}
+		$this->checkTitleUserPermissions( $redirectTitle, 'edit' );
+
 		// Get and check the target/destination page name.
 		$target = $this->getParameter( 'target' );
 		$targetTitle = Title::newFromText( $target );
 		if ( !$targetTitle || !$targetTitle->exists() ) {
 			$this->addError( $this->msg( 'redirectmanager-no-target', $targetTitle->getFullText() ) );
-			return;
-		}
-
-		// Get and check the redirect/source page name.
-		$redirect = $this->getParameter( 'redirect' );
-		$redirectTitle = Title::newFromText( $redirect );
-		if ( $redirectTitle->exists() ) {
-			$this->addError( 'redirectmanager-redirect-page-exists' );
 			return;
 		}
 

@@ -68,11 +68,14 @@
 		( new mw.Api() ).post( {
 			action: 'redirectmanager',
 			target: mw.config.get( 'wgPageName' ),
-			redirect: redirect
+			redirect: redirect,
+			errorformat: 'html'
 		} ).done( function () {
 			redirectManager.refreshList();
 		} ).fail( function ( errorCode, result ) {
-			redirectManager.newRedirectField.setErrors( [ result.error.info ] );
+			result.errors.forEach( function ( error ) {
+				redirectManager.newRedirectField.setErrors( [ new OO.ui.HtmlSnippet( error[ '*' ] ) ] );
+			} );
 		} );
 	};
 
