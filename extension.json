@@ -7,9 +7,9 @@
 	"descriptionmsg": "redirectmanager-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"requires": {
-		"MediaWiki": ">= 1.37.0"
+		"MediaWiki": ">= 1.36.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\RedirectManager\\": "src/"
@@ -38,6 +38,7 @@
 				"jquery.textSelection",
 				"oojs-ui-core",
 				"oojs-ui-widgets",
+				"mediawiki.widgets",
 				"oojs-ui-toolbars",
 				"oojs-ui-windows",
 				"oojs-ui.styles.icons-content",
