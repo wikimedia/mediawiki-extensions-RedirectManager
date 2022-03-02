@@ -7,7 +7,7 @@
 	"descriptionmsg": "redirectmanager-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"requires": {
 		"MediaWiki": ">= 1.36.0"
 	},
@@ -47,6 +47,8 @@
 			"messages": [
 				"redirectmanager-title",
 				"redirectmanager-close",
+				"redirectmanager-help",
+				"redirectmanager-help-title",
 				"redirectmanager-newredirect-field",
 				"redirectmanager-newredirect-button",
 				"redirectmanager-existing-redirects",

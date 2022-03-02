@@ -8,10 +8,19 @@
 
 	RedirectManager.static.name = 'extRedirectManager';
 
-	RedirectManager.static.title = mw.msg( 'redirectmanager-title' );
+	RedirectManager.static.title = OO.ui.deferMsg( 'redirectmanager-title' );
 
 	RedirectManager.static.actions = [
-		{ label: mw.msg( 'redirectmanager-close' ), flags: 'progressive' }
+		{
+			title: OO.ui.deferMsg( 'redirectmanager-close' ),
+			flags: [ 'safe', 'close' ]
+		},
+		{
+			action: 'help',
+			label: OO.ui.deferMsg( 'redirectmanager-help' ),
+			title: OO.ui.deferMsg( 'redirectmanager-help-title' ),
+			href: 'https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:RedirectManager'
+		}
 	];
 
 	/**
@@ -29,7 +38,8 @@
 
 		this.newRedirectInput = new mw.widgets.TitleInputWidget();
 		var newRedirectButton = new OO.ui.ButtonWidget( {
-			label: mw.msg( 'redirectmanager-newredirect-button' )
+			label: mw.msg( 'redirectmanager-newredirect-button' ),
+			flags: [ 'progressive' ]
 		} );
 		newRedirectButton.connect( this, { click: this.addRedirect } );
 		this.newRedirectField = new OO.ui.ActionFieldLayout(
@@ -96,13 +106,22 @@
 			titles: mw.config.get( 'wgPageName' )
 		} ).then( function ( result ) {
 			var out;
-			if ( result.query.pages[ mw.config.get( 'wgArticleId' ) ].redirects === undefined ) {
+			var pageInfo = false;
+			if ( result.query.pages[ mw.config.get( 'wgArticleId' ) ] !== undefined ) {
+				pageInfo = result.query.pages[ mw.config.get( 'wgArticleId' ) ];
+			} else if ( result.query.pages[ -1 ] !== undefined ) {
+				pageInfo = result.query.pages[ -1 ];
+			}
+			if ( !pageInfo ) {
+				return;
+			}
+			if ( pageInfo.redirects === undefined ) {
 				var msg = document.createElement( 'em' );
 				msg.textContent = mw.msg( 'redirectmanager-no-redirects-found' );
 				out = document.createElement( 'p' );
 				out.appendChild( msg );
 			} else {
-				var redirects = result.query.pages[ mw.config.get( 'wgArticleId' ) ].redirects;
+				var redirects = pageInfo.redirects;
 				redirects.sort( function ( a, b ) {
 					return a.title > b.title;
 				} );
@@ -138,7 +157,11 @@
 		var dialog = this;
 		if ( action ) {
 			return new OO.ui.Process( function () {
-				dialog.close( { action: action } );
+				if ( action === 'help' ) {
+					window.open( dialog.actions.list[ 1 ].href );
+				} else {
+					dialog.close( { action: action } );
+				}
 			} );
 		}
 		return RedirectManager.super.prototype.getActionProcess.call( this, action );

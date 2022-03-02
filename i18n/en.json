@@ -7,6 +7,8 @@
 	"redirectmanager-desc": "Manage a page's redirects from within the editing form.",
 	"redirectmanager-title": "Redirect Manager",
 	"redirectmanager-close": "Close",
+	"redirectmanager-help": "Help",
+	"redirectmanager-help-title": "Read the user manual",
 	"redirectmanager-newredirect-field": "Add new redirect:",
 	"redirectmanager-newredirect-button": "Add",
 	"redirectmanager-redirect-page-exists": "The requested redirect already exists. Please edit it manually.",
