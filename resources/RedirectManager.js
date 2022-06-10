@@ -1,7 +1,11 @@
 ( function () {
 
-	function RedirectManager( config ) {
-		RedirectManager.super.call( this, config );
+	/**
+	 * @param {jQuery} $textarea
+	 */
+	function RedirectManager( $textarea ) {
+		RedirectManager.super.call( this, {} );
+		this.$textarea = $textarea;
 	}
 
 	OO.inheritClass( RedirectManager, OO.ui.ProcessDialog );
@@ -99,6 +103,7 @@
 	};
 
 	RedirectManager.prototype.refreshList = function () {
+		var redirectManager = this;
 		var existingRedirectsField = this.existingRedirectsField;
 		( new mw.Api() ).get( {
 			action: 'query',
@@ -125,32 +130,69 @@
 				redirects.sort( function ( a, b ) {
 					return a.title > b.title;
 				} );
-				out = document.createElement( 'ul' );
+				out = document.createElement( 'table' );
+				out.classList.add( 'ext-redirectmanager-table' );
 				Object.keys( redirects ).forEach( function ( key ) {
 					var title = new mw.Title( redirects[ key ].title, redirects[ key ].ns );
-					var a = document.createElement( 'a' );
-					a.setAttribute( 'href', title.getUrl( { redirect: 'no' } ) );
-					a.setAttribute( 'target', '_base' );
-					a.textContent = title.getPrefixedText();
-					var copy = document.createElement( 'a' );
-					copy.setAttribute( 'role', 'button' );
-					copy.setAttribute( 'class', 'ext-redirectmanager-copy-to-clipboard' );
-					copy.textContent = mw.msg( 'redirectmanager-copy-to-clipboard' );
-					copy.addEventListener( 'click', function () {
-						navigator.clipboard.writeText( title.getPrefixedText() ).then( function () {
-							copy.textContent = mw.msg( 'redirectmanager-copied-to-clipboard' );
-						} );
-					} );
-					var li = document.createElement( 'li' );
-					li.appendChild( a );
-					li.appendChild( new Text( ' ' ) );
-					li.appendChild( copy );
-					out.appendChild( li );
+					out.appendChild( redirectManager.getTableRow( title )[ 0 ] );
 				} );
 			}
 			existingRedirectsField.getField().$element.empty();
 			existingRedirectsField.getField().$element.append( out );
 		} );
+	};
+
+	/**
+	 * @private
+	 * @param {mw.Title} title
+	 * @return {jQuery}
+	 */
+	RedirectManager.prototype.getTableRow = function ( title ) {
+		var redirectButton = new OO.ui.ButtonWidget( {
+			href: title.getUrl( { redirect: 'no' } ),
+			target: '_base',
+			label: title.getPrefixedText(),
+			framed: false
+		} );
+
+		var insertButton = new OO.ui.ButtonWidget( {
+			label: mw.msg( 'redirectmanager-insert' ),
+			flags: [ 'progressive' ],
+			framed: false
+		} );
+		insertButton.connect( this, {
+			click: function () {
+				this.$textarea.textSelection( 'replaceSelection', title.getPrefixedText() );
+				this.close();
+			}
+		} );
+
+		var copyButton = false;
+		if ( navigator && navigator.clipboard ) {
+			copyButton = new OO.ui.ButtonWidget( {
+				label: mw.msg( 'redirectmanager-copy-to-clipboard' ),
+				flags: [ 'progressive' ],
+				framed: false
+			} );
+			copyButton.connect( this, {
+				click: function () {
+					navigator.clipboard.writeText( title.getPrefixedText() ).then( function () {
+						copyButton.setLabel( mw.msg( 'redirectmanager-copied-to-clipboard' ) );
+						setTimeout( function () {
+							copyButton.setLabel( mw.msg( 'redirectmanager-copy-to-clipboard' ) );
+						}, 800 );
+					} );
+				}
+			} );
+		}
+
+		var $row = $( '<tr>' )
+			.append( $( '<td>' ).append( redirectButton.$element ) );
+		if ( copyButton ) {
+			$row.append( $( '<td>' ).append( insertButton.$element ) );
+		}
+		$row.append( $( '<td>' ).append( copyButton.$element ) );
+		return $row;
 	};
 
 	RedirectManager.prototype.getActionProcess = function ( action ) {

@@ -19,5 +19,6 @@
 	"redirectmanager-existing-redirects": "Existing redirects to $1:",
 	"redirectmanager-no-redirects-found": "No redirects found.",
 	"redirectmanager-copy-to-clipboard": "Copy",
-	"redirectmanager-copied-to-clipboard": "Copied!"
+	"redirectmanager-copied-to-clipboard": "Copied!",
+	"redirectmanager-insert": "Insert"
 }

@@ -1,7 +1,7 @@
 ( function () {
 	var RedirectManager = require( './RedirectManager.js' );
 	mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $textarea ) {
-		var dialog = new RedirectManager();
+		var dialog = new RedirectManager( $textarea );
 		OO.ui.getWindowManager().addWindows( [ dialog ] );
 		$textarea.wikiEditor( 'addToToolbar', {
 			section: 'main',
