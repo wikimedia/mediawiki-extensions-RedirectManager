@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Can",
+			"Hedda"
+		]
+	},
+	"redirectmanager-desc": "Bir sayfanın yönlendirmelerini düzenleme formundan yönetin.",
+	"redirectmanager-title": "Yönlendirme Yöneticisi",
+	"redirectmanager-close": "Kapat",
+	"redirectmanager-help": "Yardım",
+	"redirectmanager-help-title": "Kullanım kılavuzunu okuyun",
+	"redirectmanager-newredirect-field": "Yeni yönlendirme ekle:",
+	"redirectmanager-newredirect-button": "Ekle",
+	"redirectmanager-redirect-page-exists": "İstenen yönlendirme zaten mevcut. Lütfen, bu yönlendirmeyi manuel olarak düzenleyin.",
+	"redirectmanager-no-target": "Bu yönlendirmenin istenen hedefi ('$1') mevcut değil.",
+	"redirectmanager-edit-summary": "YönlendirmeYöneticisi iletişim kutusu aracılığıyla yeniden yönlendirme eklendi.",
+	"tag-redirectmanager": "YönlendirmeYöneticisi",
+	"tag-redirectmanager-description": "YönlendirmeYöneticisi iletişim kutusu tarafından eklenen yönlendirmeler.",
+	"redirectmanager-existing-redirects": "$1 sayfasına yapılan yönlendirmeler:",
+	"redirectmanager-no-redirects-found": "Yönlendirme bulunamadı.",
+	"redirectmanager-copy-to-clipboard": "Kopyala",
+	"redirectmanager-copied-to-clipboard": "Kopyalandı!",
+	"redirectmanager-insert": "Ekle"
+}
