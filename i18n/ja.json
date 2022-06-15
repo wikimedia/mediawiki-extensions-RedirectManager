@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore"
+		]
+	},
+	"redirectmanager-close": "閉じる",
+	"redirectmanager-help": "ヘルプ",
+	"redirectmanager-newredirect-button": "追加",
+	"redirectmanager-copy-to-clipboard": "コピー",
+	"redirectmanager-copied-to-clipboard": "コピーしました",
+	"redirectmanager-insert": "挿入"
+}
