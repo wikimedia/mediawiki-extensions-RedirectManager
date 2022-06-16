@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"redirectmanager-desc": "Gère les redirections d’une page au sein même du formulaire de modification.",
+	"redirectmanager-title": "Gestionnaire de redirection",
+	"redirectmanager-close": "Fermer",
+	"redirectmanager-help": "Aide",
+	"redirectmanager-help-title": "Lire le manuel de l’utilisateur",
+	"redirectmanager-newredirect-field": "Ajouter une nouvelle redirection :",
+	"redirectmanager-newredirect-button": "Ajouter",
+	"redirectmanager-redirect-page-exists": "La redirection demandée existe déjà. Veuillez la modifier manuellement.",
+	"redirectmanager-no-target": "La cible demandée pour cette redirection (« $1 ») n’existe pas.",
+	"redirectmanager-edit-summary": "Redirection ajoutée par le dialogue du Gestionnaire de redirection.",
+	"tag-redirectmanager": "GestionnaireDeRedirection",
+	"tag-redirectmanager-description": "Redirections ajoutées par le dialogue du Gestionnaire de redirection.",
+	"redirectmanager-existing-redirects": "Redirections existantes vers $1 :",
+	"redirectmanager-no-redirects-found": "Aucune redirection trouvée.",
+	"redirectmanager-copy-to-clipboard": "Copier",
+	"redirectmanager-copied-to-clipboard": "Copié !"
+}

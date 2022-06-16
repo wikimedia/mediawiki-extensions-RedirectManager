@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yahya"
+		]
+	},
+	"redirectmanager-title": "পুনর্নির্দেশ ব্যবস্থাপক",
+	"redirectmanager-close": "বন্ধ",
+	"redirectmanager-help": "সাহায্য",
+	"redirectmanager-newredirect-button": "যোগ করুন",
+	"redirectmanager-copy-to-clipboard": "অনুলিপি",
+	"redirectmanager-copied-to-clipboard": "অনুলিপি হয়েছে!"
+}

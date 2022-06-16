@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"redirectmanager-desc": "Управление на пренасочванията на страницата от формуляра за редактиране.",
+	"redirectmanager-title": "Мениджър на пренасочванията",
+	"redirectmanager-close": "Затваряне",
+	"redirectmanager-help": "Помощ",
+	"redirectmanager-help-title": "Прочетете ръководството на потребителя",
+	"redirectmanager-newredirect-field": "Добавяне на ново пренасочване:",
+	"redirectmanager-newredirect-button": "Добавяне",
+	"redirectmanager-redirect-page-exists": "Заявеното пренасочване вече съществува. Моля, редактирайте го ръчно.",
+	"redirectmanager-no-target": "Заявената цел на това пренасочване ('$1') не съществува.",
+	"redirectmanager-edit-summary": "Пренасочвания добавени от диалога на Мениджър за пренасочвания.",
+	"tag-redirectmanager": "Мениджър за пренасочвания",
+	"tag-redirectmanager-description": "Пренасочвания добавени от диалога на Мениджър за пренасочвания.",
+	"redirectmanager-existing-redirects": "Съществуващи пренасочвания до $1:",
+	"redirectmanager-no-redirects-found": "Не са открити пренасочвания.",
+	"redirectmanager-copy-to-clipboard": "Копиране",
+	"redirectmanager-copied-to-clipboard": "Копирано!"
+}

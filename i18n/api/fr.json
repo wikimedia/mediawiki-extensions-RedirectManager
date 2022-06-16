@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Gérer les redirections vers des pages (avec l’[[mw:Special:MyLanguage/Extension:RedirectManager|extension RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Le nom de la redirection, celui de la page d’origine.",
+	"apihelp-redirectmanager-param-target": "La page vers laquelle pointe la redirection, le nom de page cible.",
+	"apihelp-redirectmanager-example-1": "Redirige un raccourci du Manuel de style vers sa page effective."
+}

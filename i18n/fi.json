@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO"
+		]
+	},
+	"redirectmanager-close": "Sulje",
+	"redirectmanager-help": "Ohje",
+	"redirectmanager-newredirect-button": "Lisää",
+	"redirectmanager-copy-to-clipboard": "Kopioi",
+	"redirectmanager-copied-to-clipboard": "Kopioitu"
+}

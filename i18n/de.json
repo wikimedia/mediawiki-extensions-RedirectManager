@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brettchenweber"
+		]
+	},
+	"redirectmanager-desc": "Verwaltung der Weiterleitungen einer Seite über das Bearbeitungsformular.",
+	"redirectmanager-title": "Weiterleitungs-Manager",
+	"redirectmanager-close": "Schließen",
+	"redirectmanager-help": "Hilfe",
+	"redirectmanager-help-title": "Lies das Benutzerhandbuch",
+	"redirectmanager-newredirect-field": "Neue Weiterleitung hinzufügen:",
+	"redirectmanager-newredirect-button": "Hinzufügen",
+	"redirectmanager-redirect-page-exists": "Die gewünschte Weiterleitung existiert bereits. Bitte bearbeite sie manuell.",
+	"redirectmanager-no-target": "Das angeforderte Ziel dieser Weiterleitung („$1“) existiert nicht.",
+	"redirectmanager-edit-summary": "Weiterleitung über den Weiterleitungs-Manager-Dialog hinzugefügt.",
+	"tag-redirectmanager": "Weiterleitungs-Manager",
+	"tag-redirectmanager-description": "Vom Weiterleitungs-Manager hinzugefügte Weiterleitungen",
+	"redirectmanager-existing-redirects": "Bestehende Weiterleitungen zu $1:",
+	"redirectmanager-no-redirects-found": "Keine Weiterleitungen gefunden.",
+	"redirectmanager-copy-to-clipboard": "Kopieren",
+	"redirectmanager-copied-to-clipboard": "Kopiert!"
+}
