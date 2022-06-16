@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"redirectmanager-desc": "Управуавње на пренасочувањата на страницата од образецот за уредување.",
+	"redirectmanager-title": "Управувач со пренасочувања",
+	"redirectmanager-close": "Затвори",
+	"redirectmanager-help": "Помош",
+	"redirectmanager-help-title": "Прочитајте го корисничкото упатство",
+	"redirectmanager-newredirect-field": "Додај ново пренасочување:",
+	"redirectmanager-newredirect-button": "Додај",
+	"redirectmanager-redirect-page-exists": "Побараното пренасочување веќе постои. Уредете го рачно.",
+	"redirectmanager-no-target": "Саканата цел на ова пренасочување („$1“) не постои.",
+	"redirectmanager-edit-summary": "Додадено пренасочување преку дијалогот на Управувачот со пренасочувања.",
+	"tag-redirectmanager": "Управувач со пренасочувања",
+	"tag-redirectmanager-description": "Пренасочувања додадени со дијалогот на Управувачот со пренасочувања.",
+	"redirectmanager-existing-redirects": "Постоечки пренасочувања кон $1:",
+	"redirectmanager-no-redirects-found": "Не пронајдов пренасочувања.",
+	"redirectmanager-copy-to-clipboard": "Копирај",
+	"redirectmanager-copied-to-clipboard": "Ископирано!",
+	"redirectmanager-insert": "Вметни"
+}
