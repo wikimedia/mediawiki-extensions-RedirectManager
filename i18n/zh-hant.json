@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"redirectmanager-close": "關閉",
+	"redirectmanager-help": "說明",
+	"redirectmanager-help-title": "閱讀使用者手冊",
+	"redirectmanager-newredirect-field": "新增重新導向：",
+	"redirectmanager-newredirect-button": "新增",
+	"redirectmanager-no-redirects-found": "查無重新導向。",
+	"redirectmanager-copy-to-clipboard": "複製",
+	"redirectmanager-copied-to-clipboard": "已複製！",
+	"redirectmanager-insert": "插入"
+}

@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"redirectmanager-desc": "Hantera en sidas omdirigeringar inifrån redigeringsformuläret.",
+	"redirectmanager-title": "Omdirigeringshanterare",
+	"redirectmanager-close": "Stäng",
+	"redirectmanager-help": "Hjälp",
+	"redirectmanager-help-title": "Läs användarmanualen",
+	"redirectmanager-newredirect-field": "Lägg till ny omdirigering:",
+	"redirectmanager-newredirect-button": "Lägg till",
+	"redirectmanager-redirect-page-exists": "Den begärda omdirigering finns redan. Redigera den manuellt.",
+	"redirectmanager-no-target": "Det begärda målet för den här omdirigeringen (\"$1\") finns inte.",
+	"redirectmanager-edit-summary": "Omdirigering har lagts till via dialogen i Omdirigeringshanteraren.",
+	"tag-redirectmanager": "Omdirigeringshanterare",
+	"tag-redirectmanager-description": "Omdirigering har lagts till av dialogen i Omdirigeringshanteraren.",
+	"redirectmanager-existing-redirects": "Befintliga omdirigeringar till $1:",
+	"redirectmanager-no-redirects-found": "Inga omdirigeringar hittades.",
+	"redirectmanager-copy-to-clipboard": "Kopiera",
+	"redirectmanager-copied-to-clipboard": "Kopierades!",
+	"redirectmanager-insert": "Infoga"
+}

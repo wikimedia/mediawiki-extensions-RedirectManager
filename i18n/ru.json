@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Pacha Tchernof"
+		]
+	},
+	"redirectmanager-desc": "Управляйте перенаправлениями страницы из формы редактирования.",
+	"redirectmanager-title": "Менеджер перенаправлений",
+	"redirectmanager-close": "Закрыть",
+	"redirectmanager-help": "Помощь",
+	"redirectmanager-help-title": "Прочитайте руководство пользователя",
+	"redirectmanager-newredirect-field": "Добавьте новое перенаправление:",
+	"redirectmanager-newredirect-button": "Добавить",
+	"redirectmanager-redirect-page-exists": "Запрошенное перенаправление уже существует. Пожалуйста, отредактируйте его вручную.",
+	"redirectmanager-no-target": "Не существует запрошенной целевой страницы для этого перенаправления  ('$1').",
+	"redirectmanager-edit-summary": "Перенаправление добавлено через Менеджер перенаправлений.",
+	"tag-redirectmanager": "Менеджер перенаправлений",
+	"tag-redirectmanager-description": "Перенаправления добавлены через Менеджер перенаправлений.",
+	"redirectmanager-existing-redirects": "Существующие перенаправления на $1:",
+	"redirectmanager-no-redirects-found": "Перенаправления не найдены.",
+	"redirectmanager-copy-to-clipboard": "Скопировать",
+	"redirectmanager-copied-to-clipboard": "Скопировано!",
+	"redirectmanager-insert": "Вставить"
+}

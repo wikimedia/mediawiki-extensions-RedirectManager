@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Robby",
 			"Sam Wilson"
 		]
 	},
@@ -18,7 +19,7 @@
 	"tag-redirectmanager-description": "Description of the change tag, viewed on [[Special:Tags]].",
 	"redirectmanager-existing-redirects": "Label text above a list of existing redirects.\n\nParameters:\n\n*$1 — Title of the current page.",
 	"redirectmanager-no-redirects-found": "Notice text shown below the above label when there are zero existing redirects.",
-	"redirectmanager-copy-to-clipboard": "Button text for the copy-to-clipboard button.",
+	"redirectmanager-copy-to-clipboard": "Button text for the copy-to-clipboard button.\n{{identical|Copy}}",
 	"redirectmanager-copied-to-clipboard": "Button text for the copy-to-clipboard button, displayed temporarily after the button is clicked.",
 	"redirectmanager-insert": "Button text for the insert-to-textarea button."
 }
