@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"redirectmanager-title": "넘겨주기 관리자",
+	"redirectmanager-close": "닫기",
+	"redirectmanager-help": "도움말",
+	"redirectmanager-newredirect-field": "새 넘겨주기 추가:",
+	"redirectmanager-newredirect-button": "추가",
+	"redirectmanager-copy-to-clipboard": "복사",
+	"redirectmanager-copied-to-clipboard": "복사 완료!"
+}
