@@ -22,6 +22,12 @@ class Api extends ApiBase {
 		// Get and check the redirect/source page name and permission.
 		$redirect = $this->getParameter( 'redirect' );
 		$redirectTitle = Title::newFromText( $redirect );
+		// Redirect is invalid.
+		if ( $redirectTitle === null ) {
+			$this->addError( 'redirectmanager-redirect-page-invalid' );
+			return;
+		}
+		// Redirect already exists.
 		if ( $redirectTitle->exists() ) {
 			$this->addError( 'redirectmanager-redirect-page-exists' );
 			return;
@@ -31,9 +37,14 @@ class Api extends ApiBase {
 		// Get and check the target/destination page name.
 		$target = $this->getParameter( 'target' );
 		$targetTitle = Title::newFromText( $target );
-		if ( !$targetTitle || !$targetTitle->exists() ) {
-			$this->addError( $this->msg( 'redirectmanager-no-target', $targetTitle->getFullText() ) );
+		// Target is not valid.
+		if ( $targetTitle === null ) {
+			$this->addError( $this->msg( 'redirectmanager-invalid-target', $target ) );
 			return;
+		}
+		// Target does not exist (not an error; just a warning).
+		if ( !$targetTitle->exists() ) {
+			$this->addWarning( $this->msg( 'redirectmanager-no-target', $targetTitle->getFullText() ) );
 		}
 
 		// Create the redirect.
