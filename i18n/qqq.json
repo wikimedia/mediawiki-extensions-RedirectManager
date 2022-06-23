@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sam Wilson"
+			"Sam Wilson",
+			"Robby"
 		]
 	},
 	"redirectmanager-desc": "{{desc|name=RedirectManager|url=https://www.mediawiki.org/wiki/Extension:RedirectManager}}",
@@ -12,12 +13,12 @@
 	"redirectmanager-newredirect-field": "Label for a text input field.",
 	"redirectmanager-newredirect-button": "Button text for submitting the text input field.",
 	"redirectmanager-redirect-page-exists": "Error message displayed when a redirect is submitted but its page already exists.",
-	"redirectmanager-no-target": "Error message displayed when the target of a redirect does not exist.\n\nParameters:\n\n* $1 — The title of the requested target page.",
+	"redirectmanager-no-target": "Warning message displayed when the target of a redirect does not exist.\n\nParameters:\n\n* $1 — The title of the requested target page.",
 	"redirectmanager-edit-summary": "Change comment used when creating a new redirect page.",
 	"tag-redirectmanager": "Name of the change tag with which edits are tagged.",
 	"tag-redirectmanager-description": "Description of the change tag, viewed on [[Special:Tags]].",
 	"redirectmanager-existing-redirects": "Label text above a list of existing redirects.\n\nParameters:\n\n*$1 — Title of the current page.",
 	"redirectmanager-no-redirects-found": "Notice text shown below the above label when there are zero existing redirects.",
-	"redirectmanager-copy-to-clipboard": "Button text for the copy-to-clipboard button.",
+	"redirectmanager-copy-to-clipboard": "Button text for the copy-to-clipboard button.\n{{identical|Copy}}",
 	"redirectmanager-copied-to-clipboard": "Button text for the copy-to-clipboard button, displayed temporarily after the button is clicked."
 }

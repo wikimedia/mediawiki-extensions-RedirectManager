@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Управување со пренасочувања кон страници (со додатокот [[mw:Special:MyLanguage/Extension:RedirectManager|Управувач со пренасочувања]]).",
+	"apihelp-redirectmanager-param-redirect": "Името на пренасоченото, т.е. името на изворната страница.",
+	"apihelp-redirectmanager-param-target": "Страницата кон која ќе води пренасочувањето, т.е. име на целната страница.",
+	"apihelp-redirectmanager-example-1": "Пренасочи кратенка за Прирачник за стилот кон неговата фактичка страница."
+}
