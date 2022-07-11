@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"apihelp-redirectmanager-summary": "管理頁面的重新導向（使用[[mw:Special:MyLanguage/Extension:RedirectManager|重新導向管理器擴充]]）。",
+	"apihelp-redirectmanager-param-redirect": "重新導向名稱，來源頁面名稱。",
+	"apihelp-redirectmanager-param-target": "重新導向將指向到的頁面，目標頁面名稱。",
+	"apihelp-redirectmanager-example-1": "將樣式手冊的快捷重新導向到其實際頁面。"
+}

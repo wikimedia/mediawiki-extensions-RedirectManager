@@ -1,14 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kly",
 			"Winston Sung"
 		]
 	},
+	"redirectmanager-desc": "從編輯表單中管理頁面的重新導向。",
+	"redirectmanager-title": "重新導向管理器",
 	"redirectmanager-close": "關閉",
 	"redirectmanager-help": "說明",
 	"redirectmanager-help-title": "閱讀使用者手冊",
 	"redirectmanager-newredirect-field": "新增重新導向：",
 	"redirectmanager-newredirect-button": "新增",
+	"redirectmanager-redirect-page-invalid": "請求的重新導向不是有效的頁面標題。請輸入別的標題。",
+	"redirectmanager-redirect-page-exists": "請求的重新導向已存在。請手動編輯。",
+	"redirectmanager-invalid-target": "此重新導向的請求目標（「$1」）不是有效的頁面標題。",
+	"redirectmanager-no-target": "此重新導向的請求目標（「$1」）不存在。",
+	"redirectmanager-edit-summary": "透過重新導向對話框添加的重新導向。",
+	"tag-redirectmanager": "重新導向管理器",
+	"tag-redirectmanager-description": "由重新導向管理器對話框添加的重新導向。",
+	"redirectmanager-existing-redirects": "現有指向到$1的重新導向：",
 	"redirectmanager-no-redirects-found": "查無重新導向。",
 	"redirectmanager-copy-to-clipboard": "複製",
 	"redirectmanager-copied-to-clipboard": "已複製！",
