@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brettchenweber"
+		]
+	},
+	"apihelp-redirectmanager-param-target": "Die Seite, auf die weitergeleitet werden soll, der Name der Zielseite."
+}
