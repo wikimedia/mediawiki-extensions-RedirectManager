@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Gerer redirectiones a paginas (con le [[mw:Special:MyLanguage/Extension:RedirectManager|extension RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Le nomine del redirection, le nomine del pagina de origine.",
+	"apihelp-redirectmanager-param-target": "Le pagina verso le qual punctara le redirection, le nomine del pagina de destination.",
+	"apihelp-redirectmanager-example-1": "Rediriger un accesso directe \"Manual of Style\" verso su pagina real."
+}
