@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"redirectmanager-desc": "Gerer le redirectiones de un pagina de intra le formulario de modification.",
+	"redirectmanager-title": "Gestor de redirection",
+	"redirectmanager-close": "Clauder",
+	"redirectmanager-help": "Adjuta",
+	"redirectmanager-help-title": "Leger le manual del usator",
+	"redirectmanager-newredirect-field": "Adder nove redirection:",
+	"redirectmanager-newredirect-button": "Adder",
+	"redirectmanager-redirect-page-exists": "Le redirection requestate ja existe. Per favor modifica lo manualmente.",
+	"redirectmanager-no-target": "Le destination requestate de iste redirection ('$1') non existe.",
+	"redirectmanager-edit-summary": "Redirection addite via le dialogo de RedirectManager.",
+	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager-description": "Redirectiones addite per le dialogo de RedirectManager.",
+	"redirectmanager-existing-redirects": "Redirectiones existente verso $1:",
+	"redirectmanager-no-redirects-found": "Nulle redirection trovate.",
+	"redirectmanager-copy-to-clipboard": "Copiar",
+	"redirectmanager-copied-to-clipboard": "Copiate!"
+}

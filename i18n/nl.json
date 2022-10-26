@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dnlweijers"
+			"Dnlweijers",
+			"McDutchie"
 		]
 	},
-	"redirectmanager-title": "Doorverwijspagina",
+	"redirectmanager-title": "Doorverwijsbeheer",
 	"redirectmanager-close": "Sluiten",
 	"redirectmanager-help": "Hulp",
 	"redirectmanager-help-title": "Lees de gebruikershandleiding",
