@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Gerir redirecionamentos para páginas (com a extensão [[mw:Special:MyLanguage/Extension:RedirectManager|gestor de redirecionamentos]]).",
+	"apihelp-redirectmanager-param-redirect": "O nome do redirecionamento, o nome da página de origem.",
+	"apihelp-redirectmanager-param-target": "A página para a qual o redirecionamento apontará, o nome da página de destino.",
+	"apihelp-redirectmanager-example-1": "Redirecionar um atalho do Manual de Estilo para a sua verdadeira página."
+}
