@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"apihelp-redirectmanager-summary": "ניהול הפניות לדפים (עם [[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "שם ההפניה, שם דף המקור.",
+	"apihelp-redirectmanager-param-target": "הדף שההפניה תפנה אליו, שם דף היעד.",
+	"apihelp-redirectmanager-example-1": "הפניית קיצור הדרך Manual of Style לדף האמיתי שלו."
+}
