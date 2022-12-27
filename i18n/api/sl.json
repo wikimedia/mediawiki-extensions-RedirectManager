@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Upravljajte preusmeritve na strani (z [[mw:Special:MyLanguage/Extension:RedirectManager|razširitvijo RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Ime preusmeritve, ime izvorne strani.",
+	"apihelp-redirectmanager-param-target": "Stran, na katero bo usmerjena preusmeritev, ime ciljne strani.",
+	"apihelp-redirectmanager-example-1": "Preusmeritev bližnjice Slogovnega priročnika na njeno dejansko stran."
+}
