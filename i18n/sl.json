@@ -4,5 +4,20 @@
 			"Eleassar"
 		]
 	},
-	"tag-redirectmanager": "Upravitelj preusmeritev"
+	"redirectmanager-desc": "Upravljajte preusmeritve strani v obrwzcu za urejanje.",
+	"redirectmanager-title": "Upravitelj preusmeritev",
+	"redirectmanager-close": "Zapri",
+	"redirectmanager-help": "Pomoč",
+	"redirectmanager-help-title": "Preberite uporabniški priročnik",
+	"redirectmanager-newredirect-field": "Dodaj novo preusmeritev:",
+	"redirectmanager-newredirect-button": "Dodaj",
+	"redirectmanager-redirect-page-exists": "Zahtevana preusmeritev že obstaja. Uredite jo ročno.",
+	"redirectmanager-no-target": "Zahtevani cilj te preusmeritve (»$1«) ne obstaja.",
+	"redirectmanager-edit-summary": "Preusmeritev, dodana s pogovornim oknom RedirectManager.",
+	"tag-redirectmanager": "Upravitelj preusmeritev",
+	"tag-redirectmanager-description": "Preusmeritve, dodane s pogovornim oknom RedirectManager.",
+	"redirectmanager-existing-redirects": "Obstoječe preusmeritve na $1:",
+	"redirectmanager-no-redirects-found": "Ni najdenih preusmeritev.",
+	"redirectmanager-copy-to-clipboard": "Kopiraj",
+	"redirectmanager-copied-to-clipboard": "Kopirano!"
 }
