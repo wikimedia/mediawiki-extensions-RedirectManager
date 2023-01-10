@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Upravljanje preusmjeravanjima na stranice (s [[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager proširenjem]]).",
+	"apihelp-redirectmanager-param-redirect": "Ime preusmjeravanja, ime izvorne stranice.",
+	"apihelp-redirectmanager-param-target": "Stranica na koju će preusmjeravati, ime odredišne ​​stranice.",
+	"apihelp-redirectmanager-example-1": "Preusmjerite prečac Manual of Style na njegovu stvarnu stranicu."
+}
