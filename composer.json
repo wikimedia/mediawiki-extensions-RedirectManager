@@ -40,5 +40,10 @@
 	},
 	"extra": {
 		"installer-name": "RedirectManager"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
