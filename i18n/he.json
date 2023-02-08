@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"redirectmanager-desc": "ניהול הפניות של דף מתוך טופס העריכה.",
+	"redirectmanager-title": "מנהל הפניות",
+	"redirectmanager-close": "סגירה",
+	"redirectmanager-help": "עזרה",
+	"redirectmanager-help-title": "קריאת המדריך למשתמש",
+	"redirectmanager-newredirect-field": "הוספת הפניה חדשה:",
+	"redirectmanager-newredirect-button": "הוספה",
+	"redirectmanager-redirect-page-exists": "ההפניה המבוקשת כבר קיימת. נא לערוך אותה ידנית.",
+	"redirectmanager-no-target": "היעד המבוקש של ההפניה הזאת (\"$1\") אינו קיים.",
+	"redirectmanager-edit-summary": "הפניה נוספה באמצעות תיבת הדו־שיח של מנהל ההפניות.",
+	"tag-redirectmanager": "מנהל ההפניות",
+	"tag-redirectmanager-description": "הפניות שנוספו על־ידי תיבת הדו־שיח מנהל ההפניות.",
+	"redirectmanager-existing-redirects": "הפניות קיימות לדף $1:",
+	"redirectmanager-no-redirects-found": "לא נמצאו הפניות.",
+	"redirectmanager-copy-to-clipboard": "העתקה",
+	"redirectmanager-copied-to-clipboard": "הועתק!"
+}
