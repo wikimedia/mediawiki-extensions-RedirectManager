@@ -1,9 +1,27 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"redirectmanager-desc": "إدارة عمليات إعادة توجيه الصفحة من داخل نموذج التحرير.",
 	"redirectmanager-title": "مدير التحويل",
-	"redirectmanager-close": "أغلق"
+	"redirectmanager-close": "أغلق",
+	"redirectmanager-help": "مساعدة",
+	"redirectmanager-help-title": "اقرأ دليل المستخدم",
+	"redirectmanager-newredirect-field": "أضف إعادة توجيه جديدة:",
+	"redirectmanager-newredirect-button": "أضف",
+	"redirectmanager-redirect-page-invalid": "إعادة التوجيه المطلوبة ليست عنوان صفحة صالحًا. الرجاء إدخال عنوان مختلف.",
+	"redirectmanager-redirect-page-exists": "إعادة التوجيه المطلوبة موجودة بالفعل. يرجى تحريره يدويًا.",
+	"redirectmanager-invalid-target": "الهدف المطلوب لإعادة التوجيه (' $1 ') ليس عنوان صفحة صالحًا.",
+	"redirectmanager-no-target": "الهدف المطلوب لإعادة التوجيه (\" $1 \") غير موجود.",
+	"redirectmanager-edit-summary": "تمت إضافة إعادة التوجيه عبر مربع حوار RedirectManager.",
+	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager-description": "تمت إضافة عمليات إعادة التوجيه بواسطة مربع الحوار RedirectManager.",
+	"redirectmanager-existing-redirects": "عمليات إعادة التوجيه الحالية إلى $1 :",
+	"redirectmanager-no-redirects-found": "لم يتم العثور على عمليات إعادة توجيه.",
+	"redirectmanager-copy-to-clipboard": "نسخ",
+	"redirectmanager-copied-to-clipboard": "نُسِخت!",
+	"redirectmanager-insert": "إدراج"
 }
