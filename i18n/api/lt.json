@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Tvarkykite puslapių peradresavimus (su [[mw:Special:MyLanguage/Extension:RedirectManager|„RedirectManager“ plėtiniu]]).",
+	"apihelp-redirectmanager-param-redirect": "Peradresavimo pavadinimas, šaltinio puslapio pavadinimas.",
+	"apihelp-redirectmanager-param-target": "Puslapis, į kurį bus nukreipiama, tikslo puslapio pavadinimas."
+}
