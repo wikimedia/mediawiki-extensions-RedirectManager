@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Behandle omdirigeringer til sider (med [[mw:Special:MyLanguage/Extension:RedirectManager|utvidelsen RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Navnet på omdirigeringen, navnet på kildesiden.",
+	"apihelp-redirectmanager-param-target": "Siden omdirigeringen skal peke til, målsidenavnet.",
+	"apihelp-redirectmanager-example-1": "Omdiriger en stilmanualsnarvei til den faktiske siden."
+}

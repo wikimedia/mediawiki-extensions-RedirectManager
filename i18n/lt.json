@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"redirectmanager-desc": "Tvarkykite puslapio peradresavimus iš redagavimo formos.",
+	"redirectmanager-title": "Peradresavimų valdymas",
+	"redirectmanager-close": "Uždaryti",
+	"redirectmanager-help": "Pagalba",
+	"redirectmanager-help-title": "Perskaitykite naudotojo vadovą",
+	"redirectmanager-newredirect-field": "Pridėti naują peradresavimą:",
+	"redirectmanager-newredirect-button": "Pridėti",
+	"redirectmanager-redirect-page-invalid": "Prašomas peradresavimas nėra tinkamas puslapio pavadinimas. Įveskite kitą pavadinimą.",
+	"redirectmanager-redirect-page-exists": "Prašomas peradresavimas jau egzistuoja. Redaguokite jį rankiniu būdu.",
+	"redirectmanager-invalid-target": "Prašomas šio peradresavimo tikslas („$1“) nėra tinkamas puslapio pavadinimas.",
+	"redirectmanager-no-target": "Prašomas šio peradresavimo tikslas („$1“) neegzistuoja.",
+	"redirectmanager-edit-summary": "Peradresavimas pridėtas per „RedirectManager“ dialogo langą.",
+	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager-description": "Peradresavimai, pridėti „RedirectManager“ dialogo lange.",
+	"redirectmanager-existing-redirects": "Esami peradresavimai į $1 :",
+	"redirectmanager-no-redirects-found": "Peradresavimų nerasta.",
+	"redirectmanager-copy-to-clipboard": "Kopijuoti",
+	"redirectmanager-copied-to-clipboard": "Nukopijuota!",
+	"redirectmanager-insert": "Įterpti"
+}
