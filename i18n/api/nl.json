@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Doorverwijzingen naar pagina’s beheren (met de [[mw:Special:MyLanguage/Extension:RedirectManager|uitbreiding RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "De naam van de doorverwijzing, de naam van de bronpagina.",
+	"apihelp-redirectmanager-param-target": "De pagina waarnaar de doorverwijzing moet verwijzen, de naam van de bestemmingspagina.",
+	"apihelp-redirectmanager-example-1": "Een snelkoppeling naar de ''Manual of Style'' doorverwijzen naar de echte pagina ervan."
+}
