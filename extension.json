@@ -75,7 +75,14 @@
 		}
 	},
 	"APIModules": {
-		"redirectmanager": "MediaWiki\\Extension\\RedirectManager\\Api"
+		"redirectmanager": {
+			"class": "MediaWiki\\Extension\\RedirectManager\\Api",
+			"services": [
+				"ContentHandlerFactory",
+				"ContentLanguage",
+				"WikiPageFactory"
+			]
+		}
 	},
 	"manifest_version": 2
 }

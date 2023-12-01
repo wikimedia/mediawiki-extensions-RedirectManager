@@ -3,13 +3,44 @@
 namespace MediaWiki\Extension\RedirectManager;
 
 use ApiBase;
+use ApiMain;
 use CommentStoreComment;
-use MediaWiki\MediaWikiServices;
+use Language;
+use MediaWiki\Content\IContentHandlerFactory;
+use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Revision\SlotRecord;
 use Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class Api extends ApiBase {
+	/** @var IContentHandlerFactory */
+	private $contentHandlerFactory;
+
+	/** @var Language */
+	private $contentLanguage;
+
+	/** @var WikiPageFactory */
+	private $wikiPageFactory;
+
+	/**
+	 * @param ApiMain $main
+	 * @param string $action
+	 * @param IContentHandlerFactory $contentHandlerFactory
+	 * @param Language $contentLanguage
+	 * @param WikiPageFactory $wikiPageFactory
+	 */
+	public function __construct(
+		ApiMain $main,
+		$action,
+		IContentHandlerFactory $contentHandlerFactory,
+		Language $contentLanguage,
+		WikiPageFactory $wikiPageFactory
+	) {
+		parent::__construct( $main, $action );
+		$this->contentHandlerFactory = $contentHandlerFactory;
+		$this->contentLanguage = $contentLanguage;
+		$this->wikiPageFactory = $wikiPageFactory;
+	}
 
 	/**
 	 * @inheritDoc
@@ -48,17 +79,16 @@ class Api extends ApiBase {
 		}
 
 		// Create the redirect.
-		$services = MediaWikiServices::getInstance();
-		$contentHandler = $services->getContentHandlerFactory()
+		$contentHandler = $this->contentHandlerFactory
 			->getContentHandler( $redirectTitle->getContentModel() );
 		$content = $contentHandler->makeRedirectContent( $targetTitle );
-		$pageUpdater = $services->getWikiPageFactory()
+		$pageUpdater = $this->wikiPageFactory
 			->newFromTitle( $redirectTitle )
 			->newPageUpdater( $this->getUser() );
 		$pageUpdater->setContent( SlotRecord::MAIN, $content );
 		$pageUpdater->addTag( 'redirectmanager' );
 		$comment = $this->msg( 'redirectmanager-edit-summary' )
-			->inLanguage( $services->getContentLanguage() )
+			->inLanguage( $this->contentLanguage )
 			->parse();
 		$pageUpdater->saveRevision(
 			CommentStoreComment::newUnsavedComment( $comment ),
