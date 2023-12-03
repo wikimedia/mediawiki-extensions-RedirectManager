@@ -80,6 +80,7 @@
 		}
 		var redirectManager = this;
 		( new mw.Api() ).post( {
+			formatversion: 2,
 			action: 'redirectmanager',
 			target: mw.config.get( 'wgPageName' ),
 			redirect: redirect,
@@ -88,7 +89,7 @@
 			redirectManager.refreshList();
 		} ).fail( function ( errorCode, result ) {
 			result.errors.forEach( function ( error ) {
-				redirectManager.newRedirectField.setErrors( [ new OO.ui.HtmlSnippet( error[ '*' ] ) ] );
+				redirectManager.newRedirectField.setErrors( [ new OO.ui.HtmlSnippet( error.html ) ] );
 			} );
 		} );
 	};
@@ -106,20 +107,13 @@
 		var redirectManager = this;
 		var existingRedirectsField = this.existingRedirectsField;
 		( new mw.Api() ).get( {
+			formatversion: 2,
 			action: 'query',
 			prop: 'redirects',
 			titles: mw.config.get( 'wgPageName' )
 		} ).then( function ( result ) {
 			var out;
-			var pageInfo = false;
-			if ( result.query.pages[ mw.config.get( 'wgArticleId' ) ] !== undefined ) {
-				pageInfo = result.query.pages[ mw.config.get( 'wgArticleId' ) ];
-			} else if ( result.query.pages[ -1 ] !== undefined ) {
-				pageInfo = result.query.pages[ -1 ];
-			}
-			if ( !pageInfo ) {
-				return;
-			}
+			var pageInfo = result.query.pages[ 0 ];
 			if ( pageInfo.redirects === undefined ) {
 				var msg = document.createElement( 'em' );
 				msg.textContent = mw.msg( 'redirectmanager-no-redirects-found' );
