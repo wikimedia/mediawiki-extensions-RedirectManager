@@ -112,27 +112,24 @@
 			prop: 'redirects',
 			titles: mw.config.get( 'wgPageName' )
 		} ).then( function ( result ) {
-			var out;
+			var $out;
 			var pageInfo = result.query.pages[ 0 ];
 			if ( pageInfo.redirects === undefined ) {
-				var msg = document.createElement( 'em' );
-				msg.textContent = mw.msg( 'redirectmanager-no-redirects-found' );
-				out = document.createElement( 'p' );
-				out.appendChild( msg );
+				$out = $( '<p>' ).append(
+					$( '<em>' ).text( mw.msg( 'redirectmanager-no-redirects-found' ) )
+				);
 			} else {
 				var redirects = pageInfo.redirects;
 				redirects.sort( function ( a, b ) {
 					return a.title > b.title;
 				} );
-				out = document.createElement( 'table' );
-				out.classList.add( 'ext-redirectmanager-table' );
+				$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' );
 				Object.keys( redirects ).forEach( function ( key ) {
 					var title = new mw.Title( redirects[ key ].title, redirects[ key ].ns );
-					out.appendChild( redirectManager.getTableRow( title )[ 0 ] );
+					$out.append( redirectManager.getTableRow( title ) );
 				} );
 			}
-			existingRedirectsField.getField().$element.empty();
-			existingRedirectsField.getField().$element.append( out );
+			existingRedirectsField.getField().$element.empty().append( $out );
 		} );
 	};
 
