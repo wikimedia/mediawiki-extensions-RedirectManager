@@ -83,7 +83,8 @@
 			action: 'redirectmanager',
 			target: mw.config.get( 'wgPageName' ),
 			redirect: redirect,
-			errorformat: 'html'
+			errorformat: 'html',
+			uselang: mw.config.get( 'wgUserLanguage' )
 		} ).done( function () {
 			redirectManager.refreshList();
 		} ).fail( function ( errorCode, result ) {
