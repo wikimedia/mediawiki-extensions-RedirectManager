@@ -59,9 +59,9 @@
 		} } );
 
 		var title = new mw.Title( mw.config.get( 'wgPageName' ) );
-		var strongTitle = '<strong>' + title.getPrefixedText() + '</strong>';
+		var $strongTitle = $( '<strong>' ).text( title.getPrefixedText() );
 		this.existingRedirectsField = new OO.ui.FieldLayout( new OO.ui.Widget(), {
-			label: new OO.ui.HtmlSnippet( mw.message( 'redirectmanager-existing-redirects', [ strongTitle ] ).text() ),
+			label: mw.message( 'redirectmanager-existing-redirects', [ $strongTitle ] ).parseDom(),
 			align: 'top'
 		} );
 
