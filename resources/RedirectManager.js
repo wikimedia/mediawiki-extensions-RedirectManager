@@ -122,15 +122,15 @@
 					$( '<em>' ).text( mw.msg( 'redirectmanager-no-redirects-found' ) )
 				);
 			} else {
-				const redirects = pageInfo.redirects;
-				redirects.sort( function ( a, b ) {
-					return a.title > b.title;
-				} );
 				$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' );
-				Object.keys( redirects ).forEach( function ( key ) {
-					const title = new mw.Title( redirects[ key ].title, redirects[ key ].ns );
-					$out.append( redirectManager.getTableRow( title ) );
-				} );
+				pageInfo.redirects
+					.sort( function ( a, b ) {
+						return a.title > b.title;
+					} )
+					.forEach( function ( redirect ) {
+						const title = new mw.Title( redirect.title, redirect.ns );
+						$out.append( redirectManager.getTableRow( title ) );
+					} );
 			}
 			existingRedirectsField.getField().$element.empty().append( $out );
 		} );
