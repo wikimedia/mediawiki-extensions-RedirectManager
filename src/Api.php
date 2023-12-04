@@ -4,12 +4,12 @@ namespace MediaWiki\Extension\RedirectManager;
 
 use ApiBase;
 use ApiMain;
-use CommentStoreComment;
 use Language;
+use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Content\IContentHandlerFactory;
 use MediaWiki\Page\WikiPageFactory;
 use MediaWiki\Revision\SlotRecord;
-use Title;
+use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class Api extends ApiBase {

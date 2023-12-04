@@ -9,7 +9,7 @@
 	"type": "other",
 	"version": "1.1.2",
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\RedirectManager\\": "src/"
