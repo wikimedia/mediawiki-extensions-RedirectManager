@@ -178,12 +178,13 @@
 			} );
 		}
 
-		var $row = $( '<tr>' )
-			.append( $( '<td>' ).append( redirectButton.$element ) );
+		var $row = $( '<tr>' ).append(
+			$( '<td>' ).append( redirectButton.$element ),
+			$( '<td>' ).append( insertButton.$element )
+		);
 		if ( copyButton ) {
-			$row.append( $( '<td>' ).append( insertButton.$element ) );
+			$row.append( $( '<td>' ).append( copyButton.$element ) );
 		}
-		$row.append( $( '<td>' ).append( copyButton.$element ) );
 		return $row;
 	};
 
