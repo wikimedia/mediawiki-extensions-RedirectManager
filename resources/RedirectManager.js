@@ -41,7 +41,7 @@
 		this.content = new OO.ui.PanelLayout( { padded: true, expanded: false } );
 
 		this.newRedirectInput = new mw.widgets.TitleInputWidget();
-		var newRedirectButton = new OO.ui.ButtonWidget( {
+		const newRedirectButton = new OO.ui.ButtonWidget( {
 			label: mw.msg( 'redirectmanager-newredirect-button' ),
 			flags: [ 'progressive' ]
 		} );
@@ -58,8 +58,8 @@
 			this.newRedirectField.setErrors( [] );
 		} } );
 
-		var title = new mw.Title( mw.config.get( 'wgPageName' ) );
-		var $strongTitle = $( '<strong>' ).text( title.getPrefixedText() );
+		const title = new mw.Title( mw.config.get( 'wgPageName' ) );
+		const $strongTitle = $( '<strong>' ).text( title.getPrefixedText() );
 		this.existingRedirectsField = new OO.ui.FieldLayout( new OO.ui.Widget(), {
 			label: mw.message( 'redirectmanager-existing-redirects', [ $strongTitle ] ).parseDom(),
 			align: 'top'
@@ -73,12 +73,12 @@
 	};
 
 	RedirectManager.prototype.addRedirect = function () {
-		var redirect = this.newRedirectInput.getValue();
+		const redirect = this.newRedirectInput.getValue();
 		if ( redirect === '' ) {
 			this.newRedirectInput.focus();
 			return;
 		}
-		var redirectManager = this;
+		const redirectManager = this;
 		( new mw.Api() ).post( {
 			formatversion: 2,
 			action: 'redirectmanager',
@@ -90,7 +90,9 @@
 			redirectManager.refreshList();
 		} ).fail( function ( errorCode, result ) {
 			result.errors.forEach( function ( error ) {
-				redirectManager.newRedirectField.setErrors( [ new OO.ui.HtmlSnippet( error.html ) ] );
+				redirectManager.newRedirectField.setErrors( [
+					new OO.ui.HtmlSnippet( error.html )
+				] );
 			} );
 		} );
 	};
@@ -105,28 +107,28 @@
 	};
 
 	RedirectManager.prototype.refreshList = function () {
-		var redirectManager = this;
-		var existingRedirectsField = this.existingRedirectsField;
+		const redirectManager = this;
+		const existingRedirectsField = this.existingRedirectsField;
 		( new mw.Api() ).get( {
 			formatversion: 2,
 			action: 'query',
 			prop: 'redirects',
 			titles: mw.config.get( 'wgPageName' )
 		} ).then( function ( result ) {
-			var $out;
-			var pageInfo = result.query.pages[ 0 ];
+			let $out;
+			const pageInfo = result.query.pages[ 0 ];
 			if ( pageInfo.redirects === undefined ) {
 				$out = $( '<p>' ).append(
 					$( '<em>' ).text( mw.msg( 'redirectmanager-no-redirects-found' ) )
 				);
 			} else {
-				var redirects = pageInfo.redirects;
+				const redirects = pageInfo.redirects;
 				redirects.sort( function ( a, b ) {
 					return a.title > b.title;
 				} );
 				$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' );
 				Object.keys( redirects ).forEach( function ( key ) {
-					var title = new mw.Title( redirects[ key ].title, redirects[ key ].ns );
+					const title = new mw.Title( redirects[ key ].title, redirects[ key ].ns );
 					$out.append( redirectManager.getTableRow( title ) );
 				} );
 			}
@@ -140,14 +142,14 @@
 	 * @return {jQuery}
 	 */
 	RedirectManager.prototype.getTableRow = function ( title ) {
-		var redirectButton = new OO.ui.ButtonWidget( {
+		const redirectButton = new OO.ui.ButtonWidget( {
 			href: title.getUrl( { redirect: 'no' } ),
 			target: '_base',
 			label: title.getPrefixedText(),
 			framed: false
 		} );
 
-		var insertButton = new OO.ui.ButtonWidget( {
+		const insertButton = new OO.ui.ButtonWidget( {
 			label: mw.msg( 'redirectmanager-insert' ),
 			flags: [ 'progressive' ],
 			framed: false
@@ -159,7 +161,7 @@
 			}
 		} );
 
-		var copyButton = false;
+		let copyButton = false;
 		if ( navigator && navigator.clipboard ) {
 			copyButton = new OO.ui.ButtonWidget( {
 				label: mw.msg( 'redirectmanager-copy-to-clipboard' ),
@@ -178,7 +180,7 @@
 			} );
 		}
 
-		var $row = $( '<tr>' ).append(
+		const $row = $( '<tr>' ).append(
 			$( '<td>' ).append( redirectButton.$element ),
 			$( '<td>' ).append( insertButton.$element )
 		);
@@ -189,7 +191,7 @@
 	};
 
 	RedirectManager.prototype.getActionProcess = function ( action ) {
-		var dialog = this;
+		const dialog = this;
 		if ( action ) {
 			return new OO.ui.Process( function () {
 				if ( action === 'help' ) {
