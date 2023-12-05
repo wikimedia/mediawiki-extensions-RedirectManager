@@ -36,13 +36,14 @@
 		"ext.RedirectManager": {
 			"dependencies": [
 				"jquery.textSelection",
-				"oojs-ui-core",
-				"oojs-ui-widgets",
+				"mediawiki.jqueryMsg",
 				"mediawiki.widgets",
+				"oojs-ui-core",
 				"oojs-ui-toolbars",
+				"oojs-ui-widgets",
 				"oojs-ui-windows",
-				"oojs-ui.styles.icons-content",
-				"oojs-ui.styles.icons-interactions"
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-content"
 			],
 			"messages": [
 				"redirectmanager-title",
