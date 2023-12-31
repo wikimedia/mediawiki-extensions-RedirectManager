@@ -118,15 +118,17 @@ RedirectManager.prototype.refreshList = function () {
 				$( '<em>' ).text( mw.msg( 'redirectmanager-no-redirects-found' ) )
 			);
 		} else {
-			$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' );
-			pageInfo.redirects
-				.sort( function ( a, b ) {
-					return a.title > b.title;
-				} )
-				.forEach( function ( redirect ) {
-					const title = new mw.Title( redirect.title, redirect.ns );
-					$out.append( this.getTableRow( title ) );
-				}.bind( this ) );
+			$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' ).append(
+				pageInfo.redirects
+					.sort( function ( a, b ) {
+						return a.title > b.title;
+					} )
+					.map( function ( redirect ) {
+						return this.getTableRow(
+							new mw.Title( redirect.title, redirect.ns )
+						);
+					}.bind( this ) )
+			);
 		}
 		this.existingRedirectsField.getField().$element.empty().append( $out );
 	}.bind( this ) );
