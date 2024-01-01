@@ -27,5 +27,7 @@
 	"redirectmanager-copy-to-clipboard-title": "Button tooltip for the copy-to-clipboard button.",
 	"redirectmanager-copied-to-clipboard": "Button text for the copy-to-clipboard button, displayed temporarily after the button is clicked.",
 	"redirectmanager-insert": "Button text for the insert-to-textarea button.",
-	"redirectmanager-insert-title": "Button tooltip for the insert-to-textarea button."
+	"redirectmanager-insert-title": "Button tooltip for the insert-to-textarea button.",
+	"redirectmanager-delete-redirect": "Button text for the delete redirect button.",
+	"redirectmanager-delete-redirect-title": "Button tooltip for the delete redirect button."
 }

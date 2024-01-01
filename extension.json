@@ -22,7 +22,8 @@
 	"Hooks": {
 		"EditPage::showEditForm:initial": "RedirectManagerHooks",
 		"ListDefinedTags": "RedirectManagerHooks",
-		"ChangeTagsListActive": "RedirectManagerHooks"
+		"ChangeTagsListActive": "RedirectManagerHooks",
+		"ChangeTagsAllowedAdd": "RedirectManagerHooks"
 	},
 	"MessagesDirs": {
 		"RedirectManager": [
@@ -63,7 +64,9 @@
 				"redirectmanager-copy-to-clipboard-title",
 				"redirectmanager-copied-to-clipboard",
 				"redirectmanager-insert",
-				"redirectmanager-insert-title"
+				"redirectmanager-insert-title",
+				"redirectmanager-delete-redirect",
+				"redirectmanager-delete-redirect-title"
 			],
 			"styles": [
 				"RedirectManager.less"

@@ -95,6 +95,29 @@ RedirectManager.prototype.addRedirect = function () {
 	} );
 };
 
+/**
+ * @param {mw.Title} title
+ * @return {jQuery.Promise}
+ */
+RedirectManager.prototype.deleteRedirect = function ( title ) {
+	this.newRedirectField.setErrors( [] );
+	return ( new mw.Api() ).postWithToken( 'csrf', {
+		formatversion: 2,
+		action: 'delete',
+		title: title.getPrefixedText(),
+		assert: 'user',
+		tags: 'redirectmanager',
+		errorformat: 'html',
+		uselang: mw.config.get( 'wgUserLanguage' )
+	} ).fail( ( errorCode, result ) => {
+		this.newRedirectField.setErrors(
+			result.errors.map(
+				( error ) => new OO.ui.HtmlSnippet( error.html )
+			)
+		);
+	} );
+};
+
 RedirectManager.prototype.getSetupProcess = function ( data ) {
 	data = data || {};
 	return RedirectManager.super.prototype.getSetupProcess.call( this, data )
@@ -105,14 +128,18 @@ RedirectManager.prototype.getSetupProcess = function ( data ) {
 };
 
 RedirectManager.prototype.refreshList = function () {
-	( new mw.Api() ).get( {
-		formatversion: 2,
-		action: 'query',
-		prop: 'redirects',
-		titles: mw.config.get( 'wgPageName' )
-	} ).then( ( result ) => {
+	$.when(
+		( new mw.Api() ).get( {
+			formatversion: 2,
+			action: 'query',
+			prop: 'redirects',
+			titles: mw.config.get( 'wgPageName' )
+		} ),
+		mw.user.getRights()
+	).then( ( result, rights ) => {
+		const hasDeleteRight = rights.indexOf( 'delete' ) !== -1;
 		let $out;
-		const pageInfo = result.query.pages[ 0 ];
+		const pageInfo = result[ 0 ].query.pages[ 0 ];
 		if ( pageInfo.redirects === undefined ) {
 			$out = $( '<p>' ).append(
 				$( '<em>' ).text( mw.msg( 'redirectmanager-no-redirects-found' ) )
@@ -122,7 +149,8 @@ RedirectManager.prototype.refreshList = function () {
 				pageInfo.redirects
 					.sort( ( a, b ) => a.title > b.title )
 					.map( ( redirect ) => this.getTableRow(
-						new mw.Title( redirect.title, redirect.ns )
+						new mw.Title( redirect.title, redirect.ns ),
+						hasDeleteRight
 					) )
 			);
 		}
@@ -135,7 +163,7 @@ RedirectManager.prototype.refreshList = function () {
  * @param {mw.Title} title
  * @return {jQuery}
  */
-RedirectManager.prototype.getTableRow = function ( title ) {
+RedirectManager.prototype.getTableRow = function ( title, hasDeleteRight ) {
 	const redirectButton = new OO.ui.ButtonWidget( {
 		href: title.getUrl( { redirect: 'no' } ),
 		target: '_base',
@@ -185,6 +213,27 @@ RedirectManager.prototype.getTableRow = function ( title ) {
 	if ( copyButton ) {
 		$row.append( $( '<td>' ).append( copyButton.$element ) );
 	}
+
+	if ( hasDeleteRight ) {
+		const deleteButton = new OO.ui.ButtonWidget( {
+			label: mw.msg( 'redirectmanager-delete-redirect' ),
+			title: mw.msg( 'redirectmanager-delete-redirect-title' ),
+			flags: [ 'progressive' ],
+			framed: false
+		} );
+		deleteButton.connect( this, { click: () => {
+			$row.addClass( 'ext-redirectmanager-deleting' );
+			this.deleteRedirect( title )
+				.done( () => {
+					$row.remove();
+				} )
+				.fail( () => {
+					$row.removeClass( 'ext-redirectmanager-deleting' );
+				} );
+		} } );
+		$row.append( $( '<td>' ).append( deleteButton.$element ) );
+	}
+
 	return $row;
 };
 

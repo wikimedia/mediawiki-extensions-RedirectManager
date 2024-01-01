@@ -26,5 +26,7 @@
 	"redirectmanager-copy-to-clipboard-title": "Copy the name of the redirect into the clipboard.",
 	"redirectmanager-copied-to-clipboard": "Copied!",
 	"redirectmanager-insert": "Insert",
-	"redirectmanager-insert-title": "Paste the name of the redirect into the text."
+	"redirectmanager-insert-title": "Paste the name of the redirect into the text.",
+	"redirectmanager-delete-redirect": "Delete",
+	"redirectmanager-delete-redirect-title": "Delete the redirect."
 }

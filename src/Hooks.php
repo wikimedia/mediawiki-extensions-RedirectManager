@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\RedirectManager;
 
+use MediaWiki\ChangeTags\Hook\ChangeTagsAllowedAddHook;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
@@ -9,7 +10,8 @@ use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 class Hooks implements
 	EditPage__showEditForm_initialHook,
 	ListDefinedTagsHook,
-	ChangeTagsListActiveHook
+	ChangeTagsListActiveHook,
+	ChangeTagsAllowedAddHook
 {
 
 	// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
@@ -29,5 +31,10 @@ class Hooks implements
 	/** @inheritDoc */
 	public function onChangeTagsListActive( &$tags ): void {
 		$tags[] = 'redirectmanager';
+	}
+
+	/** @inheritDoc */
+	public function onChangeTagsAllowedAdd( &$allowedTags, $addTags, $user ): void {
+		$allowedTags[] = 'redirectmanager';
 	}
 }
