@@ -20,7 +20,9 @@
 		}
 	},
 	"Hooks": {
-		"EditPage::showEditForm:initial": "RedirectManagerHooks"
+		"EditPage::showEditForm:initial": "RedirectManagerHooks",
+		"ListDefinedTags": "RedirectManagerHooks",
+		"ChangeTagsListActive": "RedirectManagerHooks"
 	},
 	"MessagesDirs": {
 		"RedirectManager": [
