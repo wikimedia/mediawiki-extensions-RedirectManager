@@ -54,12 +54,16 @@
 				"redirectmanager-help-title",
 				"redirectmanager-newredirect-field",
 				"redirectmanager-newredirect-button",
+				"redirectmanager-newredirect-button-title",
 				"redirectmanager-existing-redirects",
 				"redirectmanager-no-redirects-found",
 				"redirectmanager-redirect-page-exists",
+				"redirectmanager-link-title",
 				"redirectmanager-copy-to-clipboard",
+				"redirectmanager-copy-to-clipboard-title",
 				"redirectmanager-copied-to-clipboard",
-				"redirectmanager-insert"
+				"redirectmanager-insert",
+				"redirectmanager-insert-title"
 			],
 			"styles": [
 				"RedirectManager.less"

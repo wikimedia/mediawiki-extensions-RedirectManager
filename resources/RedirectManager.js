@@ -43,6 +43,7 @@
 		this.newRedirectInput = new mw.widgets.TitleInputWidget();
 		const newRedirectButton = new OO.ui.ButtonWidget( {
 			label: mw.msg( 'redirectmanager-newredirect-button' ),
+			title: mw.msg( 'redirectmanager-newredirect-button-title' ),
 			flags: [ 'progressive' ]
 		} );
 		newRedirectButton.connect( this, { click: this.addRedirect } );
@@ -146,11 +147,13 @@
 			href: title.getUrl( { redirect: 'no' } ),
 			target: '_base',
 			label: title.getPrefixedText(),
+			title: mw.msg( 'redirectmanager-link-title' ),
 			framed: false
 		} );
 
 		const insertButton = new OO.ui.ButtonWidget( {
 			label: mw.msg( 'redirectmanager-insert' ),
+			title: mw.msg( 'redirectmanager-insert-title' ),
 			flags: [ 'progressive' ],
 			framed: false
 		} );
@@ -165,6 +168,7 @@
 		if ( navigator && navigator.clipboard ) {
 			copyButton = new OO.ui.ButtonWidget( {
 				label: mw.msg( 'redirectmanager-copy-to-clipboard' ),
+				title: mw.msg( 'redirectmanager-copy-to-clipboard-title' ),
 				flags: [ 'progressive' ],
 				framed: false
 			} );

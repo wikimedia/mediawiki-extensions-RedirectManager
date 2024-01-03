@@ -12,6 +12,7 @@
 	"redirectmanager-help-title": "Tooltip for the dialog 'help' button.",
 	"redirectmanager-newredirect-field": "Label for a text input field.",
 	"redirectmanager-newredirect-button": "Button text for submitting the text input field.",
+	"redirectmanager-newredirect-button-title": "Button tooltip for submitting the text input field.",
 	"redirectmanager-redirect-page-invalid": "Error message displayed when a redirect is not a valid page title.",
 	"redirectmanager-redirect-page-exists": "Error message displayed when a redirect is submitted but its page already exists.",
 	"redirectmanager-invalid-target": "Error message displayed when the target of a redirect is not a valid page title.\n\nParameters:\n\n* $1 — The (invalid) title of the requested target page.",
@@ -21,7 +22,10 @@
 	"tag-redirectmanager-description": "Description of the change tag, viewed on [[Special:Tags]].",
 	"redirectmanager-existing-redirects": "Label text above a list of existing redirects.\n\nParameters:\n\n*$1 — Title of the current page.",
 	"redirectmanager-no-redirects-found": "Notice text shown below the above label when there are zero existing redirects.",
+	"redirectmanager-link-title": "Button tooltip for the redirect link.",
 	"redirectmanager-copy-to-clipboard": "Button text for the copy-to-clipboard button.\n{{identical|Copy}}",
+	"redirectmanager-copy-to-clipboard-title": "Button tooltip for the copy-to-clipboard button.",
 	"redirectmanager-copied-to-clipboard": "Button text for the copy-to-clipboard button, displayed temporarily after the button is clicked.",
-	"redirectmanager-insert": "Button text for the insert-to-textarea button."
+	"redirectmanager-insert": "Button text for the insert-to-textarea button.",
+	"redirectmanager-insert-title": "Button tooltip for the insert-to-textarea button."
 }

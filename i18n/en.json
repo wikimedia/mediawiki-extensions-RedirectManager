@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Read the user manual",
 	"redirectmanager-newredirect-field": "Add new redirect:",
 	"redirectmanager-newredirect-button": "Add",
+	"redirectmanager-newredirect-button-title": "Create a new redirect.",
 	"redirectmanager-redirect-page-invalid": "The requested redirect is not a valid page title. Please enter a different title.",
 	"redirectmanager-redirect-page-exists": "The requested redirect already exists. Please edit it manually.",
 	"redirectmanager-invalid-target": "The requested target of this redirect ('$1') is not a valid page title.",
@@ -20,7 +21,10 @@
 	"tag-redirectmanager-description": "Redirects added by the RedirectManager dialog.",
 	"redirectmanager-existing-redirects": "Existing redirects to $1:",
 	"redirectmanager-no-redirects-found": "No redirects found.",
+	"redirectmanager-link-title": "Open the redirect in a new tab.",
 	"redirectmanager-copy-to-clipboard": "Copy",
+	"redirectmanager-copy-to-clipboard-title": "Copy the name of the redirect into the clipboard.",
 	"redirectmanager-copied-to-clipboard": "Copied!",
-	"redirectmanager-insert": "Insert"
+	"redirectmanager-insert": "Insert",
+	"redirectmanager-insert-title": "Paste the name of the redirect into the text."
 }
