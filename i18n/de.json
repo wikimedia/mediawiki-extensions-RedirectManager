@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Lies das Benutzerhandbuch",
 	"redirectmanager-newredirect-field": "Neue Weiterleitung hinzufügen:",
 	"redirectmanager-newredirect-button": "Hinzufügen",
+	"redirectmanager-newredirect-button-title": "Eine neue Weiterleitung erstellen.",
 	"redirectmanager-redirect-page-invalid": "Die gewünschte Weiterleitung ist kein gültiger Seitentitel. Bitte gib einen anderen Titel ein.",
 	"redirectmanager-redirect-page-exists": "Die gewünschte Weiterleitung existiert bereits. Bitte bearbeite sie manuell.",
 	"redirectmanager-invalid-target": "Das angeforderte Ziel dieser Weiterleitung („$1“) ist kein gültiger Seitentitel.",
@@ -20,7 +21,10 @@
 	"tag-redirectmanager-description": "Vom Weiterleitungs-Manager hinzugefügte Weiterleitungen",
 	"redirectmanager-existing-redirects": "Bestehende Weiterleitungen zu $1:",
 	"redirectmanager-no-redirects-found": "Keine Weiterleitungen gefunden.",
+	"redirectmanager-link-title": "Öffnen der Weiterleitung in einer neuen Registerkarte.",
 	"redirectmanager-copy-to-clipboard": "Kopieren",
+	"redirectmanager-copy-to-clipboard-title": "Kopieren des Namens der Weiterleitung in die Zwischenablage.",
 	"redirectmanager-copied-to-clipboard": "Kopiert!",
-	"redirectmanager-insert": "Einfügen"
+	"redirectmanager-insert": "Einfügen",
+	"redirectmanager-insert-title": "Einfügen des Namens der Weiterleitung in die Zwischenablage."
 }
