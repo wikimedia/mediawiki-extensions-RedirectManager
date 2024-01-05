@@ -1,13 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"redirectmanager-close": "Zoumaachen",
 	"redirectmanager-help": "Hëllef",
 	"redirectmanager-newredirect-button": "Derbäisetzen",
+	"redirectmanager-newredirect-button-title": "Eng nei Viruleedung uleeën.",
 	"redirectmanager-no-redirects-found": "Keng Viruleedunge fonnt.",
+	"redirectmanager-link-title": "D'Viruleedung an engem neien Tab opmaachen.",
 	"redirectmanager-copy-to-clipboard": "Kopéieren",
 	"redirectmanager-copied-to-clipboard": "Kopéiert!"
 }

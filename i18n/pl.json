@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"redirectmanager-desc": "Zarządzanie przekierowaniami strony z poziomu interfejsu edytowania",
+	"redirectmanager-title": "Menadżer przekierowań",
+	"redirectmanager-close": "Zamknij",
+	"redirectmanager-help": "Pomoc",
+	"redirectmanager-help-title": "Przeczytaj stronę pomocy",
+	"redirectmanager-newredirect-field": "Dodaj nowe przekierowanie:",
+	"redirectmanager-newredirect-button": "Dodaj",
+	"redirectmanager-newredirect-button-title": "Stwórz nowe przekierowanie.",
+	"redirectmanager-redirect-page-invalid": "Nazwa żądanego przekierowania nie jest prawidłowym tytułem strony. Wprowadź inny tytuł.",
+	"redirectmanager-redirect-page-exists": "Żądane przekierowanie już istnieje. Zmień je ręcznie.",
+	"redirectmanager-invalid-target": "Nazwa żądanego celu tego przekierowania („$1”) nie jest prawidłowym tytułem strony.",
+	"redirectmanager-no-target": "Żądany cel tego przekierowania („$1”) nie istnieje.",
+	"redirectmanager-edit-summary": "Dodano przekierowanie przez okno menadżera przekierowań.",
+	"tag-redirectmanager": "Menadżer przekierowań",
+	"tag-redirectmanager-description": "Przekierowania dodane przez okno menadżera przekierowań.",
+	"redirectmanager-existing-redirects": "Istniejące przekierowania do $1:",
+	"redirectmanager-no-redirects-found": "Nie znaleziono przekierowań.",
+	"redirectmanager-link-title": "Otwórz przekierowanie w nowej karcie.",
+	"redirectmanager-copy-to-clipboard": "Kopiuj",
+	"redirectmanager-copy-to-clipboard-title": "Skopiuj nazwę przekierowania do schowka.",
+	"redirectmanager-copied-to-clipboard": "Skopiowano!",
+	"redirectmanager-insert": "Wstaw",
+	"redirectmanager-insert-title": "Wklej nazwę przekierowania do tekstu."
+}
