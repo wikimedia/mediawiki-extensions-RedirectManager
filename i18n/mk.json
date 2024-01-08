@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Прочитајте го корисничкото упатство",
 	"redirectmanager-newredirect-field": "Додај ново пренасочување:",
 	"redirectmanager-newredirect-button": "Додај",
+	"redirectmanager-newredirect-button-title": "Создај ново пренасочување.",
 	"redirectmanager-redirect-page-invalid": "Побараното пренасочувања не претставува важечки насов на страница. Внесете поинаков.",
 	"redirectmanager-redirect-page-exists": "Побараното пренасочување веќе постои. Уредете го рачно.",
 	"redirectmanager-invalid-target": "Побараната цел на ова пренасочување („$1“) не претставува важечки наслов на страница.",
@@ -20,7 +21,10 @@
 	"tag-redirectmanager-description": "Пренасочувања додадени со дијалогот на Управувачот со пренасочувања.",
 	"redirectmanager-existing-redirects": "Постоечки пренасочувања кон $1:",
 	"redirectmanager-no-redirects-found": "Не пронајдов пренасочувања.",
+	"redirectmanager-link-title": "Отвори го пренасочувањето во ново јазиче.",
 	"redirectmanager-copy-to-clipboard": "Копирај",
+	"redirectmanager-copy-to-clipboard-title": "Прекопирај го името на пренасочувањето во меѓускладот.",
 	"redirectmanager-copied-to-clipboard": "Ископирано!",
-	"redirectmanager-insert": "Вметни"
+	"redirectmanager-insert": "Вметни",
+	"redirectmanager-insert-title": "Залепи го името на пренасочувањето во текстот."
 }

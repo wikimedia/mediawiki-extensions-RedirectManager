@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Preberite uporabniški priročnik",
 	"redirectmanager-newredirect-field": "Dodaj novo preusmeritev:",
 	"redirectmanager-newredirect-button": "Dodaj",
+	"redirectmanager-newredirect-button-title": "Ustvarite novo preusmeritev.",
 	"redirectmanager-redirect-page-invalid": "Zahtevana preusmeritev ni veljaven naslov strani. Vnesite drugačen naslov.",
 	"redirectmanager-redirect-page-exists": "Zahtevana preusmeritev že obstaja. Uredite jo ročno.",
 	"redirectmanager-invalid-target": "Zahtevani cilj te preusmeritve (»$1«) ni veljaven naslov strani.",
@@ -20,7 +21,10 @@
 	"tag-redirectmanager-description": "Preusmeritve, dodane s pogovornim oknom RedirectManager.",
 	"redirectmanager-existing-redirects": "Obstoječe preusmeritve na $1:",
 	"redirectmanager-no-redirects-found": "Ni najdenih preusmeritev.",
+	"redirectmanager-link-title": "Odprite preusmeritev v novem zavihku.",
 	"redirectmanager-copy-to-clipboard": "Kopiraj",
+	"redirectmanager-copy-to-clipboard-title": "Kopirajte ime preusmeritve v odložišče.",
 	"redirectmanager-copied-to-clipboard": "Kopirano!",
-	"redirectmanager-insert": "Vstavi"
+	"redirectmanager-insert": "Vstavi",
+	"redirectmanager-insert-title": "Prilepite ime preusmeritve v besedilo."
 }
