@@ -90,11 +90,11 @@
 		} ).done( function () {
 			redirectManager.refreshList();
 		} ).fail( function ( errorCode, result ) {
-			result.errors.forEach( function ( error ) {
-				redirectManager.newRedirectField.setErrors( [
-					new OO.ui.HtmlSnippet( error.html )
-				] );
-			} );
+			redirectManager.newRedirectField.setErrors(
+				result.errors.map( function ( error ) {
+					return new OO.ui.HtmlSnippet( error.html );
+				} )
+			);
 		} );
 	};
 
