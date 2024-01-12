@@ -49,6 +49,16 @@ class Api extends ApiBase {
 		return true;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
+	public function isWriteMode() {
+		return true;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public function execute() {
 		// Get and check the redirect/source page name and permission.
 		$redirect = $this->getParameter( 'redirect' );
