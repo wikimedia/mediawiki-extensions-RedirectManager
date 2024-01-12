@@ -54,7 +54,7 @@ class Api extends ApiBase {
 		$redirect = $this->getParameter( 'redirect' );
 		$redirectTitle = Title::newFromText( $redirect );
 		// Redirect is invalid.
-		if ( $redirectTitle === null ) {
+		if ( $redirectTitle === null || !$redirectTitle->canExist() ) {
 			$this->addError( 'redirectmanager-redirect-page-invalid' );
 			return;
 		}
