@@ -12,6 +12,7 @@
 	"redirectmanager-help-title": "Прочитайте руководство пользователя",
 	"redirectmanager-newredirect-field": "Добавьте новое перенаправление:",
 	"redirectmanager-newredirect-button": "Добавить",
+	"redirectmanager-newredirect-button-title": "Создать новое перенаправление.",
 	"redirectmanager-redirect-page-invalid": "Запрошенное перенаправление является недопустимым заголовком для страницы. Пожалуйста, введите другой заголовок.",
 	"redirectmanager-redirect-page-exists": "Запрошенное перенаправление уже существует. Пожалуйста, отредактируйте его вручную.",
 	"redirectmanager-invalid-target": "Запрошенное целевое имя  этого перенаправления («$1») является недопустимым заголовком для страницы.",
@@ -21,7 +22,10 @@
 	"tag-redirectmanager-description": "Перенаправления добавлены через Менеджер перенаправлений.",
 	"redirectmanager-existing-redirects": "Существующие перенаправления на $1:",
 	"redirectmanager-no-redirects-found": "Перенаправления не найдены.",
+	"redirectmanager-link-title": "Открыть перенаправление в новой вкладке.",
 	"redirectmanager-copy-to-clipboard": "Скопировать",
+	"redirectmanager-copy-to-clipboard-title": "Скопировать название перенаправления в буфер обмена.",
 	"redirectmanager-copied-to-clipboard": "Скопировано!",
-	"redirectmanager-insert": "Вставить"
+	"redirectmanager-insert": "Вставить",
+	"redirectmanager-insert-title": "Вставить название перенаправления в текст."
 }
