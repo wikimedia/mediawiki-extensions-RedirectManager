@@ -159,8 +159,9 @@
 		} );
 		insertButton.connect( this, {
 			click: function () {
-				this.$textarea.textSelection( 'replaceSelection', title.getPrefixedText() );
-				this.close();
+				this.close().closed.then( function () {
+					this.$textarea.textSelection( 'replaceSelection', title.getPrefixedText() );
+				}.bind( this ) );
 			}
 		} );
 
