@@ -77,7 +77,6 @@ RedirectManager.prototype.addRedirect = function () {
 		this.newRedirectInput.focus();
 		return;
 	}
-	const redirectManager = this;
 	( new mw.Api() ).post( {
 		formatversion: 2,
 		action: 'redirectmanager',
@@ -86,14 +85,14 @@ RedirectManager.prototype.addRedirect = function () {
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
 	} ).done( function () {
-		redirectManager.refreshList();
-	} ).fail( function ( errorCode, result ) {
-		redirectManager.newRedirectField.setErrors(
+		this.refreshList();
+	}.bind( this ) ).fail( function ( errorCode, result ) {
+		this.newRedirectField.setErrors(
 			result.errors.map( function ( error ) {
 				return new OO.ui.HtmlSnippet( error.html );
 			} )
 		);
-	} );
+	}.bind( this ) );
 };
 
 RedirectManager.prototype.getSetupProcess = function ( data ) {
@@ -106,8 +105,6 @@ RedirectManager.prototype.getSetupProcess = function ( data ) {
 };
 
 RedirectManager.prototype.refreshList = function () {
-	const redirectManager = this;
-	const existingRedirectsField = this.existingRedirectsField;
 	( new mw.Api() ).get( {
 		formatversion: 2,
 		action: 'query',
@@ -128,11 +125,11 @@ RedirectManager.prototype.refreshList = function () {
 				} )
 				.forEach( function ( redirect ) {
 					const title = new mw.Title( redirect.title, redirect.ns );
-					$out.append( redirectManager.getTableRow( title ) );
-				} );
+					$out.append( this.getTableRow( title ) );
+				}.bind( this ) );
 		}
-		existingRedirectsField.getField().$element.empty().append( $out );
-	} );
+		this.existingRedirectsField.getField().$element.empty().append( $out );
+	}.bind( this ) );
 };
 
 /**
@@ -194,15 +191,14 @@ RedirectManager.prototype.getTableRow = function ( title ) {
 };
 
 RedirectManager.prototype.getActionProcess = function ( action ) {
-	const dialog = this;
 	if ( action ) {
 		return new OO.ui.Process( function () {
 			if ( action === 'help' ) {
-				window.open( dialog.actions.list[ 1 ].href );
+				window.open( this.actions.list[ 1 ].href );
 			} else {
-				dialog.close( { action: action } );
+				this.close( { action: action } );
 			}
-		} );
+		}.bind( this ) );
 	}
 	return RedirectManager.super.prototype.getActionProcess.call( this, action );
 };
