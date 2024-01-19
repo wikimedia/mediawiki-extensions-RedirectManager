@@ -53,7 +53,7 @@ RedirectManager.prototype.initialize = function () {
 			label: mw.msg( 'redirectmanager-newredirect-field' )
 		}
 	);
-	this.newRedirectInput.connect( this, { change: function () {
+	this.newRedirectInput.connect( this, { change: () => {
 		this.newRedirectField.setErrors( [] );
 	} } );
 
@@ -84,15 +84,15 @@ RedirectManager.prototype.addRedirect = function () {
 		redirect: redirect,
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
-	} ).done( function () {
+	} ).done( () => {
 		this.refreshList();
-	}.bind( this ) ).fail( function ( errorCode, result ) {
+	} ).fail( ( errorCode, result ) => {
 		this.newRedirectField.setErrors(
-			result.errors.map( function ( error ) {
-				return new OO.ui.HtmlSnippet( error.html );
-			} )
+			result.errors.map(
+				( error ) => new OO.ui.HtmlSnippet( error.html )
+			)
 		);
-	}.bind( this ) );
+	} );
 };
 
 RedirectManager.prototype.getSetupProcess = function ( data ) {
@@ -110,7 +110,7 @@ RedirectManager.prototype.refreshList = function () {
 		action: 'query',
 		prop: 'redirects',
 		titles: mw.config.get( 'wgPageName' )
-	} ).then( function ( result ) {
+	} ).then( ( result ) => {
 		let $out;
 		const pageInfo = result.query.pages[ 0 ];
 		if ( pageInfo.redirects === undefined ) {
@@ -120,18 +120,14 @@ RedirectManager.prototype.refreshList = function () {
 		} else {
 			$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' ).append(
 				pageInfo.redirects
-					.sort( function ( a, b ) {
-						return a.title > b.title;
-					} )
-					.map( function ( redirect ) {
-						return this.getTableRow(
-							new mw.Title( redirect.title, redirect.ns )
-						);
-					}.bind( this ) )
+					.sort( ( a, b ) => a.title > b.title )
+					.map( ( redirect ) => this.getTableRow(
+						new mw.Title( redirect.title, redirect.ns )
+					) )
 			);
 		}
 		this.existingRedirectsField.getField().$element.empty().append( $out );
-	}.bind( this ) );
+	} );
 };
 
 /**
@@ -155,10 +151,10 @@ RedirectManager.prototype.getTableRow = function ( title ) {
 		framed: false
 	} );
 	insertButton.connect( this, {
-		click: function () {
-			this.close().closed.then( function () {
+		click: () => {
+			this.close().closed.then( () => {
 				this.$textarea.textSelection( 'replaceSelection', title.getPrefixedText() );
-			}.bind( this ) );
+			} );
 		}
 	} );
 
@@ -171,10 +167,10 @@ RedirectManager.prototype.getTableRow = function ( title ) {
 			framed: false
 		} );
 		copyButton.connect( this, {
-			click: function () {
-				navigator.clipboard.writeText( title.getPrefixedText() ).then( function () {
+			click: () => {
+				navigator.clipboard.writeText( title.getPrefixedText() ).then( () => {
 					copyButton.setLabel( mw.msg( 'redirectmanager-copied-to-clipboard' ) );
-					setTimeout( function () {
+					setTimeout( () => {
 						copyButton.setLabel( mw.msg( 'redirectmanager-copy-to-clipboard' ) );
 					}, 800 );
 				} );
@@ -194,13 +190,13 @@ RedirectManager.prototype.getTableRow = function ( title ) {
 
 RedirectManager.prototype.getActionProcess = function ( action ) {
 	if ( action ) {
-		return new OO.ui.Process( function () {
+		return new OO.ui.Process( () => {
 			if ( action === 'help' ) {
 				window.open( this.actions.list[ 1 ].href );
 			} else {
 				this.close( { action: action } );
 			}
-		}.bind( this ) );
+		} );
 	}
 	return RedirectManager.super.prototype.getActionProcess.call( this, action );
 };

@@ -1,5 +1,5 @@
 const RedirectManager = require( './RedirectManager.js' );
-mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $textarea ) {
+mw.hook( 'wikiEditor.toolbarReady' ).add( ( $textarea ) => {
 	const dialog = new RedirectManager( $textarea );
 	OO.ui.getWindowManager().addWindows( [ dialog ] );
 	$textarea.wikiEditor( 'addToToolbar', {
@@ -11,7 +11,7 @@ mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $textarea ) {
 				label: mw.msg( 'redirectmanager-title' ),
 				action: {
 					type: 'callback',
-					execute: function () {
+					execute: () => {
 						OO.ui.getWindowManager().openWindow( dialog );
 					}
 				}
