@@ -26,5 +26,7 @@
 	"redirectmanager-copy-to-clipboard-title": "Kopirajte ime preusmeritve v odložišče.",
 	"redirectmanager-copied-to-clipboard": "Kopirano!",
 	"redirectmanager-insert": "Vstavi",
-	"redirectmanager-insert-title": "Prilepite ime preusmeritve v besedilo."
+	"redirectmanager-insert-title": "Prilepite ime preusmeritve v besedilo.",
+	"redirectmanager-delete-redirect": "Izbriši",
+	"redirectmanager-delete-redirect-title": "Izbriši preusmeritev."
 }

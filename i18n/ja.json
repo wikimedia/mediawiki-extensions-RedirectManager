@@ -10,5 +10,6 @@
 	"redirectmanager-newredirect-button": "追加",
 	"redirectmanager-copy-to-clipboard": "コピー",
 	"redirectmanager-copied-to-clipboard": "コピーしました",
-	"redirectmanager-insert": "挿入"
+	"redirectmanager-insert": "挿入",
+	"redirectmanager-delete-redirect": "削除"
 }

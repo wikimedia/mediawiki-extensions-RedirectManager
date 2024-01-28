@@ -6,5 +6,7 @@
 	},
 	"redirectmanager-close": "Փակել",
 	"redirectmanager-help": "Օգնություն",
-	"redirectmanager-newredirect-button": "Ավելացնել"
+	"redirectmanager-newredirect-button": "Ավելացնել",
+	"redirectmanager-delete-redirect": "Ջնջել",
+	"redirectmanager-delete-redirect-title": "Ջնջել վերահղումը:"
 }

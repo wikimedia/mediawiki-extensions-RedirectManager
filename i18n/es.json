@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eulalio",
 			"No se"
 		]
 	},
 	"tag-redirectmanager": "Administrador de redirección",
-	"tag-redirectmanager-description": "Redirecciones añadidas por el cuadro de diálogo RedirectManager."
+	"tag-redirectmanager-description": "Redirecciones añadidas por el cuadro de diálogo RedirectManager.",
+	"redirectmanager-delete-redirect": "Borrar",
+	"redirectmanager-delete-redirect-title": "Eliminar la redirección."
 }

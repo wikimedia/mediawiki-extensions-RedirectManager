@@ -26,5 +26,7 @@
 	"redirectmanager-copy-to-clipboard-title": "העתקצ שם ההפניה ללוח.",
 	"redirectmanager-copied-to-clipboard": "הועתק!",
 	"redirectmanager-insert": "הוספה",
-	"redirectmanager-insert-title": "הדבקת שם ההפניה לטקסט."
+	"redirectmanager-insert-title": "הדבקת שם ההפניה לטקסט.",
+	"redirectmanager-delete-redirect": "מחיקה",
+	"redirectmanager-delete-redirect-title": "מחיקת ההפניה."
 }
