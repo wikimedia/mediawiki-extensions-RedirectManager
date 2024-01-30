@@ -7,5 +7,7 @@
 	"redirectmanager-newredirect-button-title": "Crea un nuovo reindirizzamento.",
 	"redirectmanager-link-title": "Apri il reindirizzamento in una nuova scheda.",
 	"redirectmanager-copy-to-clipboard-title": "Copia il nome del reindirizzamento negli appunti.",
-	"redirectmanager-insert-title": "Incolla il nome del reindirizzamento nel testo."
+	"redirectmanager-insert-title": "Incolla il nome del reindirizzamento nel testo.",
+	"redirectmanager-delete-redirect": "Cancella",
+	"redirectmanager-delete-redirect-title": "Cancella il reindirizzamento."
 }

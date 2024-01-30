@@ -4,5 +4,7 @@
 			"Milicevic01"
 		]
 	},
-	"redirectmanager-newredirect-button-title": "Направи ново преусмерење."
+	"redirectmanager-newredirect-button-title": "Направи ново преусмерење.",
+	"redirectmanager-delete-redirect": "Обриши",
+	"redirectmanager-delete-redirect-title": "Обриши преусмерење."
 }

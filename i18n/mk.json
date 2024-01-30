@@ -26,5 +26,7 @@
 	"redirectmanager-copy-to-clipboard-title": "Прекопирај го името на пренасочувањето во меѓускладот.",
 	"redirectmanager-copied-to-clipboard": "Ископирано!",
 	"redirectmanager-insert": "Вметни",
-	"redirectmanager-insert-title": "Залепи го името на пренасочувањето во текстот."
+	"redirectmanager-insert-title": "Залепи го името на пренасочувањето во текстот.",
+	"redirectmanager-delete-redirect": "Избриши",
+	"redirectmanager-delete-redirect-title": "Избриши го пренасочувањето."
 }
