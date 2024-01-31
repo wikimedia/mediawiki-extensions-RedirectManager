@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Butko",
 			"Kareyac",
 			"Pacha Tchernof"
 		]
@@ -27,5 +28,7 @@
 	"redirectmanager-copy-to-clipboard-title": "Скопировать название перенаправления в буфер обмена.",
 	"redirectmanager-copied-to-clipboard": "Скопировано!",
 	"redirectmanager-insert": "Вставить",
-	"redirectmanager-insert-title": "Вставить название перенаправления в текст."
+	"redirectmanager-insert-title": "Вставить название перенаправления в текст.",
+	"redirectmanager-delete-redirect": "Удалить",
+	"redirectmanager-delete-redirect-title": "Удалите перенаправление."
 }
