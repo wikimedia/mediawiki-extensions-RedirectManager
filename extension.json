@@ -78,9 +78,9 @@
 		},
 		"ext.RedirectManager.images": {
 			"class": "MediaWiki\\ResourceLoader\\ImageModule",
-			"selector": ".ext-redirectmanager-image-{name}",
+			"selector": ".tool[rel={name}]",
 			"images": {
-				"toolbaricon": "redirectmanager.svg"
+				"redirectmanager": "redirectmanager.svg"
 			}
 		}
 	},
