@@ -20,7 +20,7 @@ class Hooks implements
 	 * @inheritDoc
 	 */
 	public function onEditPage__showEditForm_initial( $editor, $out ) {
-		$out->addModules( [ 'ext.RedirectManager', 'ext.RedirectManager.images' ] );
+		$out->addModules( [ 'ext.RedirectManager' ] );
 	}
 
 	/** @inheritDoc */

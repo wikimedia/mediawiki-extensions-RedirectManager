@@ -38,6 +38,7 @@
 	"ResourceModules": {
 		"ext.RedirectManager": {
 			"dependencies": [
+				"ext.RedirectManager.images",
 				"jquery.textSelection",
 				"mediawiki.jqueryMsg",
 				"mediawiki.widgets",
