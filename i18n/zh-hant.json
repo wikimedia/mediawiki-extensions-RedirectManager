@@ -25,5 +25,7 @@
 	"redirectmanager-link-title": "在新分頁中開啟重新導向。",
 	"redirectmanager-copy-to-clipboard": "複製",
 	"redirectmanager-copied-to-clipboard": "已複製！",
-	"redirectmanager-insert": "插入"
+	"redirectmanager-insert": "插入",
+	"redirectmanager-delete-redirect": "刪除",
+	"redirectmanager-delete-redirect-title": "刪除重新導向。"
 }
