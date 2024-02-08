@@ -18,6 +18,4 @@ mw.hook( 'wikiEditor.toolbarReady' ).add( ( $textarea ) => {
 			}
 		}
 	} );
-	// Add a class to our new button, because WikiEditor doesn't have a better way.
-	document.querySelector( '.tool[rel="redirectmanager"]' ).classList.add( 'ext-redirectmanager-image-toolbaricon' );
 } );
