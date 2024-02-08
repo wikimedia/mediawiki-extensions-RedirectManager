@@ -40,7 +40,10 @@
 			"dependencies": [
 				"ext.RedirectManager.images",
 				"jquery.textSelection",
+				"mediawiki.api",
 				"mediawiki.jqueryMsg",
+				"mediawiki.Title",
+				"mediawiki.user",
 				"mediawiki.widgets",
 				"oojs-ui-core",
 				"oojs-ui-toolbars",
