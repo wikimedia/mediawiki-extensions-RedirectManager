@@ -160,6 +160,7 @@ RedirectManager.prototype.refreshList = function () {
 
 /**
  * @private
+ * @param hasDeleteRight
  * @param {mw.Title} title
  * @return {jQuery}
  */
