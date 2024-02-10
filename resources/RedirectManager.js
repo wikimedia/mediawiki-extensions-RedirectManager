@@ -160,8 +160,8 @@ RedirectManager.prototype.refreshList = function () {
 
 /**
  * @private
- * @param hasDeleteRight
  * @param {mw.Title} title
+ * @param {boolean} hasDeleteRight
  * @return {jQuery}
  */
 RedirectManager.prototype.getTableRow = function ( title, hasDeleteRight ) {
