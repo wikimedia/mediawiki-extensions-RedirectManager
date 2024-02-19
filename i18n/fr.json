@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"SleaY",
 			"Verdy p"
 		]
 	},
@@ -22,5 +23,7 @@
 	"redirectmanager-no-redirects-found": "Aucune redirection trouvée.",
 	"redirectmanager-copy-to-clipboard": "Copier",
 	"redirectmanager-copied-to-clipboard": "Copié !",
-	"redirectmanager-insert": "Insérer"
+	"redirectmanager-insert": "Insérer",
+	"redirectmanager-delete-redirect": "Supprimer",
+	"redirectmanager-delete-redirect-title": "Supprimer la redirection."
 }
