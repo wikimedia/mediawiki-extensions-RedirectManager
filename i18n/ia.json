@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Leger le manual del usator",
 	"redirectmanager-newredirect-field": "Adder nove redirection:",
 	"redirectmanager-newredirect-button": "Adder",
+	"redirectmanager-newredirect-button-title": "Crear un nove redirection.",
 	"redirectmanager-redirect-page-invalid": "Le redirection requestate non es un titulo de pagina valide. Per favor insere un altere titulo.",
 	"redirectmanager-redirect-page-exists": "Le redirection requestate ja existe. Per favor modifica lo manualmente.",
 	"redirectmanager-invalid-target": "Le destination requestate de iste redirection ('$1') non es un titulo de pagina valide.",
@@ -20,7 +21,12 @@
 	"tag-redirectmanager-description": "Redirectiones addite per le dialogo de RedirectManager.",
 	"redirectmanager-existing-redirects": "Redirectiones existente verso $1:",
 	"redirectmanager-no-redirects-found": "Nulle redirection trovate.",
+	"redirectmanager-link-title": "Aperir le redirection in un nove scheda.",
 	"redirectmanager-copy-to-clipboard": "Copiar",
+	"redirectmanager-copy-to-clipboard-title": "Copiar le nomine del redirection al area de transferentia.",
 	"redirectmanager-copied-to-clipboard": "Copiate!",
-	"redirectmanager-insert": "Inserer"
+	"redirectmanager-insert": "Inserer",
+	"redirectmanager-insert-title": "Collar le nomine del redirection in le texto.",
+	"redirectmanager-delete-redirect": "Deler",
+	"redirectmanager-delete-redirect-title": "Deler le redirection."
 }
