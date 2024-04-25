@@ -13,25 +13,13 @@ use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class Api extends ApiBase {
-	/** @var IContentHandlerFactory */
-	private $contentHandlerFactory;
+	private IContentHandlerFactory $contentHandlerFactory;
+	private Language $contentLanguage;
+	private WikiPageFactory $wikiPageFactory;
 
-	/** @var Language */
-	private $contentLanguage;
-
-	/** @var WikiPageFactory */
-	private $wikiPageFactory;
-
-	/**
-	 * @param ApiMain $main
-	 * @param string $action
-	 * @param IContentHandlerFactory $contentHandlerFactory
-	 * @param Language $contentLanguage
-	 * @param WikiPageFactory $wikiPageFactory
-	 */
 	public function __construct(
 		ApiMain $main,
-		$action,
+		string $action,
 		IContentHandlerFactory $contentHandlerFactory,
 		Language $contentLanguage,
 		WikiPageFactory $wikiPageFactory
@@ -45,21 +33,21 @@ class Api extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
-	public function mustBePosted() {
+	public function mustBePosted(): bool {
 		return true;
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function isWriteMode() {
+	public function isWriteMode(): bool {
 		return true;
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function execute() {
+	public function execute(): void {
 		// Get and check the redirect/source page name and permission.
 		$redirect = $this->getParameter( 'redirect' );
 		$redirectTitle = Title::newFromText( $redirect );
@@ -114,7 +102,7 @@ class Api extends ApiBase {
 	/**
 	 * @return mixed[][]
 	 */
-	public function getAllowedParams() {
+	public function getAllowedParams(): array {
 		return [
 			'redirect' => [
 				ParamValidator::PARAM_TYPE => 'string',
@@ -130,7 +118,7 @@ class Api extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
-	protected function getExamplesMessages() {
+	protected function getExamplesMessages(): array {
 		return [
 			'action=redirectmanager&redirect=MOS:FOO&target=Project:Manual of Style, foobar'
 				=> 'apihelp-redirectmanager-example-1',
