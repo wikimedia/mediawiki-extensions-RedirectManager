@@ -80,6 +80,7 @@ RedirectManager.prototype.addRedirect = function () {
 	( new mw.Api() ).post( {
 		formatversion: 2,
 		action: 'redirectmanager',
+		assert: mw.config.get( 'wgUserName' ) ? 'user' : undefined,
 		target: mw.config.get( 'wgPageName' ),
 		redirect: redirect,
 		errorformat: 'html',
@@ -104,8 +105,8 @@ RedirectManager.prototype.deleteRedirect = function ( title ) {
 	return ( new mw.Api() ).postWithToken( 'csrf', {
 		formatversion: 2,
 		action: 'delete',
+		assert: mw.config.get( 'wgUserName' ) ? 'user' : undefined,
 		title: title.getPrefixedText(),
-		assert: 'user',
 		tags: 'redirectmanager',
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
