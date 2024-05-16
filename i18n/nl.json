@@ -22,7 +22,12 @@
 	"tag-redirectmanager-description": "Met het RedirectManager-dialoogvenster toegevoegde doorverwijzingen.",
 	"redirectmanager-existing-redirects": "Verwijderen doorverwijzingen naar $1",
 	"redirectmanager-no-redirects-found": "Geen omleidingen gevonden.",
+	"redirectmanager-link-title": "De doorverwijzing in een nieuw tabblad openen.",
 	"redirectmanager-copy-to-clipboard": "Kopiëren",
+	"redirectmanager-copy-to-clipboard-title": "De naam van de doorverwijzing naar het klembord kopiëren.",
 	"redirectmanager-copied-to-clipboard": "Gekopieerd!",
-	"redirectmanager-insert": "Invoegen"
+	"redirectmanager-insert": "Invoegen",
+	"redirectmanager-insert-title": "De naam van de doorverwijzing in de tekst plakken.",
+	"redirectmanager-delete-redirect": "Verwijderen",
+	"redirectmanager-delete-redirect-title": "De doorverwijzing verwijderen."
 }
