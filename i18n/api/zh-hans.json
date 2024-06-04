@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anterdc99"
+		]
+	},
+	"apihelp-redirectmanager-summary": "管理页面的重定向（使用[[mw:Special:MyLanguage/Extension:RedirectManager|重定向管理器扩展]]）。",
+	"apihelp-redirectmanager-param-redirect": "重定向名称，即源页面名称。",
+	"apihelp-redirectmanager-param-target": "重定向将指向的页面，即目标页面名称。",
+	"apihelp-redirectmanager-example-1": "将格式手册的快捷方式重定向到其实际页面。"
+}

@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anterdc99"
+		]
+	},
+	"redirectmanager-desc": "在编辑表单中管理页面的重定向。",
+	"redirectmanager-title": "重定向管理器",
+	"redirectmanager-close": "关闭",
+	"redirectmanager-help": "帮助",
+	"redirectmanager-help-title": "阅读用户手册",
+	"redirectmanager-newredirect-field": "添加新重定向：",
+	"redirectmanager-newredirect-button": "添加",
+	"redirectmanager-redirect-page-invalid": "请求的重定向不是有效的页面标题。请输入其他标题。",
+	"redirectmanager-redirect-page-exists": "请求的重定向已存在。请手动编辑。",
+	"redirectmanager-invalid-target": "此重定向的请求目标（“$1”）不是有效的页面标题。",
+	"redirectmanager-no-target": "此重定向的请求目标（“$1”）不存在。",
+	"redirectmanager-edit-summary": "通过重定向管理器对话框添加的重定向。",
+	"tag-redirectmanager": "重定向管理器",
+	"tag-redirectmanager-description": "由重定向管理器对话框添加的重定向。",
+	"redirectmanager-existing-redirects": "现有指向到$1的重定向：",
+	"redirectmanager-no-redirects-found": "未找到重定向。",
+	"redirectmanager-copy-to-clipboard": "复制",
+	"redirectmanager-copied-to-clipboard": "已复制！",
+	"redirectmanager-insert": "插入"
+}
