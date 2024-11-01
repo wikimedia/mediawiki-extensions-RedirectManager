@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mahabarata",
 			"SleaY",
 			"Verdy p"
 		]
@@ -12,6 +13,7 @@
 	"redirectmanager-help-title": "Lire le manuel de l’utilisateur",
 	"redirectmanager-newredirect-field": "Ajouter une nouvelle redirection :",
 	"redirectmanager-newredirect-button": "Ajouter",
+	"redirectmanager-newredirect-button-title": "Créer une nouvelle redirection.",
 	"redirectmanager-redirect-page-invalid": "La redirection demandée n’est pas une page de titre valide. Veuillez saisir un titre différent.",
 	"redirectmanager-redirect-page-exists": "La redirection demandée existe déjà. Veuillez la modifier manuellement.",
 	"redirectmanager-invalid-target": "La cible demandée de cette redirection (« $1 ») n’est pas un titre de page valide.",
@@ -21,9 +23,12 @@
 	"tag-redirectmanager-description": "Redirections ajoutées par le dialogue du Gestionnaire de redirection.",
 	"redirectmanager-existing-redirects": "Redirections existantes vers $1 :",
 	"redirectmanager-no-redirects-found": "Aucune redirection trouvée.",
+	"redirectmanager-link-title": "Ouvrir la redirection dans un nouvel onglet.",
 	"redirectmanager-copy-to-clipboard": "Copier",
+	"redirectmanager-copy-to-clipboard-title": "Copiez le nom de la redirection dans le presse-papiers.",
 	"redirectmanager-copied-to-clipboard": "Copié !",
 	"redirectmanager-insert": "Insérer",
+	"redirectmanager-insert-title": "Collez le nom de la redirection dans le texte.",
 	"redirectmanager-delete-redirect": "Supprimer",
 	"redirectmanager-delete-redirect-title": "Supprimer la redirection."
 }
