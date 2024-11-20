@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"redirectmanager-desc": "Бу бетни джолландырыуларын тюзетиу формадан джюрют",
+	"redirectmanager-title": "Джолландырыу Менеджер",
+	"redirectmanager-close": "Джаб",
+	"redirectmanager-help": "Болушлукъ",
+	"redirectmanager-help-title": "Хайырланыучуну юретиуюн окъу",
+	"redirectmanager-newredirect-field": "Джангы джолландырыу къош:",
+	"redirectmanager-newredirect-button": "Къош",
+	"redirectmanager-redirect-page-invalid": "Излем этилген джолландырыу бетге джарамагъан башлыкъды. Къыйын тюл эсе, башха башлыкъны киргизигиз.",
+	"redirectmanager-redirect-page-exists": "Изленнген джолландырыу алайсыз да барды. Къыйын тюл эсе, къолугъуз бла тюзетигиз.",
+	"redirectmanager-invalid-target": "Бу джолландырыуну излем этилген нюзюр аты ('$1') бет башлыкъ болуб салыныргъа джарамайды.",
+	"redirectmanager-no-target": "Бу джолландырыуну изленнген нюзюрю ('$1') джокъду.",
+	"redirectmanager-edit-summary": "ДжолландырыуМенеджерни юсю бла джолландырыу къошулду.",
+	"tag-redirectmanager": "ДжолландырыуМенеджер",
+	"tag-redirectmanager-description": "Джолландырыу Менеджерни юсю бла джолландырыула къошулгъандыла.",
+	"redirectmanager-existing-redirects": "$1 бетге этилгени джолландырыула:",
+	"redirectmanager-no-redirects-found": "Джолландырыу табылмады.",
+	"redirectmanager-copy-to-clipboard": "Копия эт",
+	"redirectmanager-copied-to-clipboard": "Копия этилди!",
+	"redirectmanager-insert": "Сал"
+}
