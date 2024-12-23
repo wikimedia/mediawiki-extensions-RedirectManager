@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"Alshamiri1"
+			"Alshamiri1",
+			"Meno25"
 		]
 	},
 	"redirectmanager-desc": "إدارة عمليات إعادة توجيه الصفحة من داخل نموذج التحرير.",
@@ -17,7 +18,7 @@
 	"redirectmanager-invalid-target": "الهدف المطلوب لإعادة التوجيه (' $1 ') ليس عنوان صفحة صالحًا.",
 	"redirectmanager-no-target": "الهدف المطلوب لإعادة التوجيه (\" $1 \") غير موجود.",
 	"redirectmanager-edit-summary": "تمت إضافة إعادة التوجيه عبر مربع حوار RedirectManager.",
-	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager": "مدير التحويلات",
 	"tag-redirectmanager-description": "تمت إضافة عمليات إعادة التوجيه بواسطة مربع الحوار RedirectManager.",
 	"redirectmanager-existing-redirects": "عمليات إعادة التوجيه الحالية إلى $1 :",
 	"redirectmanager-no-redirects-found": "لم يتم العثور على عمليات إعادة توجيه.",
