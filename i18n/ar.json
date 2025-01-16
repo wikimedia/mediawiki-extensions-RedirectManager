@@ -13,6 +13,7 @@
 	"redirectmanager-help-title": "اقرأ دليل المستخدم",
 	"redirectmanager-newredirect-field": "أضف إعادة توجيه جديدة:",
 	"redirectmanager-newredirect-button": "أضف",
+	"redirectmanager-newredirect-button-title": "إنشاء إعادة توجيه جديدة.",
 	"redirectmanager-redirect-page-invalid": "إعادة التوجيه المطلوبة ليست عنوان صفحة صالحًا. الرجاء إدخال عنوان مختلف.",
 	"redirectmanager-redirect-page-exists": "إعادة التوجيه المطلوبة موجودة بالفعل. يرجى تحريره يدويًا.",
 	"redirectmanager-invalid-target": "الهدف المطلوب لإعادة التوجيه (' $1 ') ليس عنوان صفحة صالحًا.",
@@ -22,7 +23,12 @@
 	"tag-redirectmanager-description": "تمت إضافة عمليات إعادة التوجيه بواسطة مربع الحوار RedirectManager.",
 	"redirectmanager-existing-redirects": "عمليات إعادة التوجيه الحالية إلى $1 :",
 	"redirectmanager-no-redirects-found": "لم يتم العثور على عمليات إعادة توجيه.",
+	"redirectmanager-link-title": "افتح إعادة التوجيه في علامة تبويب جديدة.",
 	"redirectmanager-copy-to-clipboard": "نسخ",
+	"redirectmanager-copy-to-clipboard-title": "انسخ اسم إعادة التوجيه إلى الحافظة.",
 	"redirectmanager-copied-to-clipboard": "نُسِخت!",
-	"redirectmanager-insert": "إدراج"
+	"redirectmanager-insert": "إدراج",
+	"redirectmanager-insert-title": "قم بلصق اسم إعادة التوجيه في النص.",
+	"redirectmanager-delete-redirect": "حذف",
+	"redirectmanager-delete-redirect-title": "حذف إعادة التوجيه."
 }
