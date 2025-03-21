@@ -148,7 +148,7 @@ RedirectManager.prototype.refreshList = function () {
 		} else {
 			$out = $( '<table>' ).addClass( 'ext-redirectmanager-table' ).append(
 				pageInfo.redirects
-					.sort( ( a, b ) => a.title > b.title )
+					.sort( ( a, b ) => a.title === b.title ? 0 : ( a.title < b.title ? -1 : 1 ) )
 					.map( ( redirect ) => this.getTableRow(
 						new mw.Title( redirect.title, redirect.ns ),
 						hasDeleteRight
