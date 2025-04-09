@@ -85,15 +85,18 @@ RedirectManager.prototype.addRedirect = function () {
 		redirect: redirect,
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
-	} ).done( () => {
-		this.refreshList();
-	} ).fail( ( errorCode, result ) => {
-		this.newRedirectField.setErrors(
-			result.errors.map(
-				( error ) => new OO.ui.HtmlSnippet( error.html )
-			)
-		);
-	} );
+	} ).then(
+		() => {
+			this.refreshList();
+		},
+		( errorCode, result ) => {
+			this.newRedirectField.setErrors(
+				result.errors.map(
+					( error ) => new OO.ui.HtmlSnippet( error.html )
+				)
+			);
+		}
+	);
 };
 
 /**
@@ -110,13 +113,16 @@ RedirectManager.prototype.deleteRedirect = function ( title ) {
 		tags: 'redirectmanager',
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
-	} ).fail( ( errorCode, result ) => {
-		this.newRedirectField.setErrors(
-			result.errors.map(
-				( error ) => new OO.ui.HtmlSnippet( error.html )
-			)
-		);
-	} );
+	} ).then(
+		() => {},
+		( errorCode, result ) => {
+			this.newRedirectField.setErrors(
+				result.errors.map(
+					( error ) => new OO.ui.HtmlSnippet( error.html )
+				)
+			);
+		}
+	);
 };
 
 RedirectManager.prototype.getSetupProcess = function ( data ) {
@@ -225,13 +231,14 @@ RedirectManager.prototype.getTableRow = function ( title, hasDeleteRight ) {
 		} );
 		deleteButton.connect( this, { click: () => {
 			$row.addClass( 'ext-redirectmanager-deleting' );
-			this.deleteRedirect( title )
-				.done( () => {
+			this.deleteRedirect( title ).then(
+				() => {
 					$row.remove();
-				} )
-				.fail( () => {
+				},
+				() => {
 					$row.removeClass( 'ext-redirectmanager-deleting' );
-				} );
+				}
+			);
 		} } );
 		$row.append( $( '<td>' ).append( deleteButton.$element ) );
 	}

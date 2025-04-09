@@ -7,7 +7,6 @@
 	],
 	"rules": {
 		"no-implicit-globals": "off",
-		"no-var": "error",
-		"no-jquery/no-done-fail": "warn"
+		"no-var": "error"
 	}
 }
