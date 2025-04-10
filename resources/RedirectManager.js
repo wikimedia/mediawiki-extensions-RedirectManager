@@ -113,16 +113,13 @@ RedirectManager.prototype.deleteRedirect = function ( title ) {
 		tags: 'redirectmanager',
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
-	} ).then(
-		() => {},
-		( errorCode, result ) => {
-			this.newRedirectField.setErrors(
-				result.errors.map(
-					( error ) => new OO.ui.HtmlSnippet( error.html )
-				)
-			);
-		}
-	);
+	} ).fail( ( errorCode, result ) => {
+		this.newRedirectField.setErrors(
+			result.errors.map(
+				( error ) => new OO.ui.HtmlSnippet( error.html )
+			)
+		);
+	} );
 };
 
 RedirectManager.prototype.getSetupProcess = function ( data ) {
