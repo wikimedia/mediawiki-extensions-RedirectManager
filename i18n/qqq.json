@@ -29,5 +29,6 @@
 	"redirectmanager-insert": "Button text for the insert-to-textarea button.",
 	"redirectmanager-insert-title": "Button tooltip for the insert-to-textarea button.",
 	"redirectmanager-delete-redirect": "Button text for the delete redirect button.",
-	"redirectmanager-delete-redirect-title": "Button tooltip for the delete redirect button."
+	"redirectmanager-delete-redirect-title": "Button tooltip for the delete redirect button.",
+	"redirectmanager-api-error": "Error message on an API error."
 }

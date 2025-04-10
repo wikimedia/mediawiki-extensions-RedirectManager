@@ -69,7 +69,8 @@
 				"redirectmanager-insert",
 				"redirectmanager-insert-title",
 				"redirectmanager-delete-redirect",
-				"redirectmanager-delete-redirect-title"
+				"redirectmanager-delete-redirect-title",
+				"redirectmanager-api-error"
 			],
 			"styles": [
 				"RedirectManager.less"

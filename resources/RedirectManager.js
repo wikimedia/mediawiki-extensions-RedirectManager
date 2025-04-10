@@ -71,6 +71,19 @@ RedirectManager.prototype.initialize = function () {
 	this.$body.append( this.content.$element );
 };
 
+/**
+ * @param {Object} result
+ */
+RedirectManager.prototype.showApiError = function ( result ) {
+	this.newRedirectField.setErrors(
+		result.errors ?
+			result.errors.map(
+				( error ) => new OO.ui.HtmlSnippet( error.html )
+			) :
+			[ mw.msg( 'redirectmanager-api-error' ) ]
+	);
+};
+
 RedirectManager.prototype.addRedirect = function () {
 	const redirect = this.newRedirectInput.getValue();
 	if ( redirect === '' ) {
@@ -90,11 +103,7 @@ RedirectManager.prototype.addRedirect = function () {
 			this.refreshList();
 		},
 		( errorCode, result ) => {
-			this.newRedirectField.setErrors(
-				result.errors.map(
-					( error ) => new OO.ui.HtmlSnippet( error.html )
-				)
-			);
+			this.showApiError( result );
 		}
 	);
 };
@@ -115,11 +124,7 @@ RedirectManager.prototype.deleteRedirect = function ( title ) {
 		uselang: mw.config.get( 'wgUserLanguage' )
 	} );
 	promise.catch( ( errorCode, result ) => {
-		this.newRedirectField.setErrors(
-			result.errors.map(
-				( error ) => new OO.ui.HtmlSnippet( error.html )
-			)
-		);
+		this.showApiError( result );
 	} );
 	return promise;
 };
