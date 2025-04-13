@@ -38,7 +38,6 @@
 	"ResourceModules": {
 		"ext.RedirectManager": {
 			"dependencies": [
-				"ext.RedirectManager.images",
 				"jquery.textSelection",
 				"mediawiki.api",
 				"mediawiki.jqueryMsg",
@@ -79,13 +78,6 @@
 				"init.js",
 				"RedirectManager.js"
 			]
-		},
-		"ext.RedirectManager.images": {
-			"class": "MediaWiki\\ResourceLoader\\ImageModule",
-			"selector": ".tool[rel={name}]",
-			"images": {
-				"redirectmanager": "redirectmanager.svg"
-			}
 		}
 	},
 	"APIModules": {

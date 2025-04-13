@@ -9,6 +9,7 @@ mw.hook( 'wikiEditor.toolbarReady' ).add( ( $textarea ) => {
 			redirectmanager: {
 				type: 'button',
 				label: mw.msg( 'redirectmanager-title' ),
+				oouiIcon: 'redirectmanager',
 				action: {
 					type: 'callback',
 					execute: () => {
