@@ -105,7 +105,7 @@ RedirectManager.prototype.addRedirect = function () {
  */
 RedirectManager.prototype.deleteRedirect = function ( title ) {
 	this.newRedirectField.setErrors( [] );
-	return ( new mw.Api() ).postWithToken( 'csrf', {
+	const promise = ( new mw.Api() ).postWithToken( 'csrf', {
 		formatversion: 2,
 		action: 'delete',
 		assert: mw.config.get( 'wgUserName' ) ? 'user' : undefined,
@@ -113,13 +113,15 @@ RedirectManager.prototype.deleteRedirect = function ( title ) {
 		tags: 'redirectmanager',
 		errorformat: 'html',
 		uselang: mw.config.get( 'wgUserLanguage' )
-	} ).fail( ( errorCode, result ) => {
+	} );
+	promise.catch( ( errorCode, result ) => {
 		this.newRedirectField.setErrors(
 			result.errors.map(
 				( error ) => new OO.ui.HtmlSnippet( error.html )
 			)
 		);
 	} );
+	return promise;
 };
 
 RedirectManager.prototype.getSetupProcess = function ( data ) {
