@@ -72,6 +72,16 @@ RedirectManager.prototype.initialize = function () {
 };
 
 /**
+ * @inheritdoc
+ */
+RedirectManager.prototype.getReadyProcess = function () {
+	return RedirectManager.super.prototype.getReadyProcess.call( this, arguments ).next( () => {
+		this.newRedirectInput.setValue( this.$textarea.textSelection( 'getSelection' ) );
+		this.newRedirectInput.focus();
+	} );
+};
+
+/**
  * @param {Object} result
  */
 RedirectManager.prototype.showApiError = function ( result ) {
