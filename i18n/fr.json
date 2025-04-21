@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bananax47",
 			"Mahabarata",
 			"SleaY",
 			"Verdy p"
@@ -30,5 +31,6 @@
 	"redirectmanager-insert": "Insérer",
 	"redirectmanager-insert-title": "Collez le nom de la redirection dans le texte.",
 	"redirectmanager-delete-redirect": "Supprimer",
-	"redirectmanager-delete-redirect-title": "Supprimer la redirection."
+	"redirectmanager-delete-redirect-title": "Supprimer la redirection.",
+	"redirectmanager-api-error": "Une erreur s'est produite."
 }

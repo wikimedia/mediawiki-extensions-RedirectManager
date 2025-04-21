@@ -28,5 +28,6 @@
 	"redirectmanager-insert": "Inserer",
 	"redirectmanager-insert-title": "Collar le nomine del redirection in le texto.",
 	"redirectmanager-delete-redirect": "Deler",
-	"redirectmanager-delete-redirect-title": "Deler le redirection."
+	"redirectmanager-delete-redirect-title": "Deler le redirection.",
+	"redirectmanager-api-error": "Un error ha occurrite."
 }

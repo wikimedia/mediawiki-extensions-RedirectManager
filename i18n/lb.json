@@ -14,5 +14,6 @@
 	"redirectmanager-copy-to-clipboard": "Kopéieren",
 	"redirectmanager-copied-to-clipboard": "Kopéiert!",
 	"redirectmanager-delete-redirect": "Läschen",
-	"redirectmanager-delete-redirect-title": "D'Viruleedung läschen."
+	"redirectmanager-delete-redirect-title": "D'Viruleedung läschen.",
+	"redirectmanager-api-error": "Et ass e Feeler geschitt."
 }

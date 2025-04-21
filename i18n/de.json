@@ -28,5 +28,6 @@
 	"redirectmanager-insert": "Einfügen",
 	"redirectmanager-insert-title": "Einfügen des Namens der Weiterleitung in die Zwischenablage.",
 	"redirectmanager-delete-redirect": "Löschen",
-	"redirectmanager-delete-redirect-title": "Löschen der Weiterleitung."
+	"redirectmanager-delete-redirect-title": "Löschen der Weiterleitung.",
+	"redirectmanager-api-error": "Es ist ein Fehler aufgetreten."
 }
