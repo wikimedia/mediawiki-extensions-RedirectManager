@@ -9,5 +9,6 @@
 	"redirectmanager-copy-to-clipboard-title": "Copia il nome del reindirizzamento negli appunti.",
 	"redirectmanager-insert-title": "Incolla il nome del reindirizzamento nel testo.",
 	"redirectmanager-delete-redirect": "Cancella",
-	"redirectmanager-delete-redirect-title": "Cancella il reindirizzamento."
+	"redirectmanager-delete-redirect-title": "Cancella il reindirizzamento.",
+	"redirectmanager-api-error": "Si è verificato un errore."
 }

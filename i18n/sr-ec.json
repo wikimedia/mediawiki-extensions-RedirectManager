@@ -6,5 +6,6 @@
 	},
 	"redirectmanager-newredirect-button-title": "Направи ново преусмерење.",
 	"redirectmanager-delete-redirect": "Обриши",
-	"redirectmanager-delete-redirect-title": "Обриши преусмерење."
+	"redirectmanager-delete-redirect-title": "Обриши преусмерење.",
+	"redirectmanager-api-error": "Дошло је до грешке."
 }
