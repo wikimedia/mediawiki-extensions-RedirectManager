@@ -29,5 +29,6 @@
 	"redirectmanager-insert": "Invoegen",
 	"redirectmanager-insert-title": "De naam van de doorverwijzing in de tekst plakken.",
 	"redirectmanager-delete-redirect": "Verwijderen",
-	"redirectmanager-delete-redirect-title": "De doorverwijzing verwijderen."
+	"redirectmanager-delete-redirect-title": "De doorverwijzing verwijderen.",
+	"redirectmanager-api-error": "Er is een fout opgetreden."
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"22258",
 			"Ykhwong"
 		]
 	},
@@ -11,5 +12,6 @@
 	"redirectmanager-newredirect-button": "추가",
 	"redirectmanager-copy-to-clipboard": "복사",
 	"redirectmanager-copied-to-clipboard": "복사 완료!",
-	"redirectmanager-delete-redirect": "삭제"
+	"redirectmanager-delete-redirect": "삭제",
+	"redirectmanager-api-error": "오류가 발생했습니다"
 }
