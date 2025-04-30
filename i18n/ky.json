@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Baydastann"
+			"Baydastann",
+			"Bosogo"
 		]
 	},
-	"redirectmanager-api-error": "Бир жерден ката кетти."
+	"redirectmanager-api-error": "Ката кетти."
 }
