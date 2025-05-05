@@ -28,5 +28,6 @@
 	"redirectmanager-insert": "הוספה",
 	"redirectmanager-insert-title": "הדבקת שם ההפניה לטקסט.",
 	"redirectmanager-delete-redirect": "מחיקה",
-	"redirectmanager-delete-redirect-title": "מחיקת ההפניה."
+	"redirectmanager-delete-redirect-title": "מחיקת ההפניה.",
+	"redirectmanager-api-error": "אירעה שגיאה."
 }
