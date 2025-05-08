@@ -30,5 +30,6 @@
 	"redirectmanager-insert": "إدراج",
 	"redirectmanager-insert-title": "قم بلصق اسم إعادة التوجيه في النص.",
 	"redirectmanager-delete-redirect": "حذف",
-	"redirectmanager-delete-redirect-title": "حذف إعادة التوجيه."
+	"redirectmanager-delete-redirect-title": "حذف إعادة التوجيه.",
+	"redirectmanager-api-error": "حدث خطأ."
 }
