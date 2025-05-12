@@ -30,5 +30,6 @@
 	"redirectmanager-insert": "Вставить",
 	"redirectmanager-insert-title": "Вставить название перенаправления в текст.",
 	"redirectmanager-delete-redirect": "Удалить",
-	"redirectmanager-delete-redirect-title": "Удалите перенаправление."
+	"redirectmanager-delete-redirect-title": "Удалите перенаправление.",
+	"redirectmanager-api-error": "Произошла ошибка."
 }
