@@ -13,21 +13,14 @@ use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class Api extends ApiBase {
-	private IContentHandlerFactory $contentHandlerFactory;
-	private Language $contentLanguage;
-	private WikiPageFactory $wikiPageFactory;
-
 	public function __construct(
 		ApiMain $main,
 		string $action,
-		IContentHandlerFactory $contentHandlerFactory,
-		Language $contentLanguage,
-		WikiPageFactory $wikiPageFactory
+		private readonly IContentHandlerFactory $contentHandlerFactory,
+		private readonly Language $contentLanguage,
+		private readonly WikiPageFactory $wikiPageFactory,
 	) {
 		parent::__construct( $main, $action );
-		$this->contentHandlerFactory = $contentHandlerFactory;
-		$this->contentLanguage = $contentLanguage;
-		$this->wikiPageFactory = $wikiPageFactory;
 	}
 
 	/**
