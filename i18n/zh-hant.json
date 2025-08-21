@@ -29,5 +29,6 @@
 	"redirectmanager-insert": "插入",
 	"redirectmanager-insert-title": "貼上重新導向的名稱到文字裡。",
 	"redirectmanager-delete-redirect": "刪除",
-	"redirectmanager-delete-redirect-title": "刪除重新導向。"
+	"redirectmanager-delete-redirect-title": "刪除重新導向。",
+	"redirectmanager-api-error": "發生錯誤。"
 }
