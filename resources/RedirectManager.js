@@ -158,7 +158,7 @@ RedirectManager.prototype.refreshList = function () {
 		} ),
 		mw.user.getRights()
 	).then( ( result, rights ) => {
-		const hasDeleteRight = rights.indexOf( 'delete' ) !== -1;
+		const hasDeleteRight = rights.includes( 'delete' );
 		let $out;
 		const pageInfo = result[ 0 ].query.pages[ 0 ];
 		if ( pageInfo.redirects === undefined ) {
