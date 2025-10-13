@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Xestionar as redireccións a páxinas (coa [[mw:Special:MyLanguage/Extension:RedirectManager|extensión RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "O nome da redirección, o nome da páxina de orixe.",
+	"apihelp-redirectmanager-param-target": "A páxina á que apuntará a redirección, o nome da páxina de destino.",
+	"apihelp-redirectmanager-example-1": "Redirixir un atallo ao libro de estilo cara á súa páxina real."
+}
