@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"redirectmanager-desc": "Xestiona as redireccións dunha páxina desde o formulario de edición.",
+	"redirectmanager-title": "Xestor de redireccións",
+	"redirectmanager-close": "Pechar",
+	"redirectmanager-help": "Axuda",
+	"redirectmanager-help-title": "Ler o manual de usuario",
+	"redirectmanager-newredirect-field": "Engadir unha nova redirección:",
+	"redirectmanager-newredirect-button": "Engadir",
+	"redirectmanager-newredirect-button-title": "Crear unha nova redirección.",
+	"redirectmanager-redirect-page-invalid": "A redirección solicitada non é un título de páxina válido. Introduce un título diferente.",
+	"redirectmanager-redirect-page-exists": "A redirección solicitada xa existe. Edítaa manualmente.",
+	"redirectmanager-invalid-target": "O destino solicitado para esta redirección («$1») non é un título de páxina válido.",
+	"redirectmanager-no-target": "O destino solicitado para esta redirección («$1») non existe.",
+	"redirectmanager-edit-summary": "Redirección engadida a través do xestor de redireccións.",
+	"tag-redirectmanager": "Xestor de redireccións",
+	"tag-redirectmanager-description": "Redireccións engadidas polo xestor de redireccións.",
+	"redirectmanager-existing-redirects": "Redireccións existentes cara a «$1»:",
+	"redirectmanager-no-redirects-found": "Non se atoparon redireccións.",
+	"redirectmanager-link-title": "Abrir a redirección nunha nova lapela.",
+	"redirectmanager-copy-to-clipboard": "Copiar",
+	"redirectmanager-copy-to-clipboard-title": "Copiar o nome da redirección no portapapeis.",
+	"redirectmanager-copied-to-clipboard": "Copiado!",
+	"redirectmanager-insert": "Inserir",
+	"redirectmanager-insert-title": "Pegar o nome da redirección no texto.",
+	"redirectmanager-delete-redirect": "Eliminar",
+	"redirectmanager-delete-redirect-title": "Eliminar a redirección.",
+	"redirectmanager-api-error": "Produciuse un erro."
+}
