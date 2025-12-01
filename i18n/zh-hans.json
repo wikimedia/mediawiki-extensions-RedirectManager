@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anterdc99"
+			"Anterdc99",
+			"Peterxy12"
 		]
 	},
 	"redirectmanager-desc": "在编辑表单中管理页面的重定向。",
@@ -28,5 +29,6 @@
 	"redirectmanager-insert": "插入",
 	"redirectmanager-insert-title": "将重定向名称粘贴到文本中。",
 	"redirectmanager-delete-redirect": "删除",
-	"redirectmanager-delete-redirect-title": "删除重定向。"
+	"redirectmanager-delete-redirect-title": "删除重定向。",
+	"redirectmanager-api-error": "发生错误。"
 }
