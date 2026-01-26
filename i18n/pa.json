@@ -4,5 +4,12 @@
 			"Cabal"
 		]
 	},
+	"redirectmanager-close": "ਬੰਦ ਕਰੋ",
+	"redirectmanager-help": "ਮਦਦ",
+	"redirectmanager-help-title": "ਵਰਤੋਂਕਾਰ ਦਸਤੀ ਪੜ੍ਹੋ",
+	"redirectmanager-newredirect-button": "ਜੋੜੋ",
+	"redirectmanager-copy-to-clipboard": "ਨਕਲ ਕਰੋ",
+	"redirectmanager-copied-to-clipboard": "ਨਕਲ ਕੀਤੀ",
+	"redirectmanager-delete-redirect": "ਮਿਟਾਓ",
 	"redirectmanager-api-error": "ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ"
 }
