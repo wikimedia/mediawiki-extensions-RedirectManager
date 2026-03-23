@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"redirectmanager-desc": "Gerenciar os redirecionamentos de uma página dentro do formulário de edição.",
+	"redirectmanager-title": "Gerenciador de redirecionamentos",
+	"redirectmanager-close": "Fechar",
+	"redirectmanager-help": "Ajuda",
+	"redirectmanager-help-title": "Leia o manual do usuário",
+	"redirectmanager-newredirect-field": "Adicionar redirecionamento novo:",
+	"redirectmanager-newredirect-button": "Adicionar",
+	"redirectmanager-redirect-page-invalid": "O redirecionamento solicitado não é um título de página válido. Introduza um título diferente, por favor.",
+	"redirectmanager-redirect-page-exists": "O redirecionamento pedido já existe. Edite-o manualmente, por favor.",
+	"redirectmanager-no-target": "O destino solicitado deste redirecionamento ('$1') não existe.",
+	"redirectmanager-edit-summary": "Redirecionamento adicionado através do diálogo do Gerenciador de redirecionamentos.",
+	"tag-redirectmanager": "Gerenciador de Redirecionamentos",
+	"tag-redirectmanager-description": "Redirecionamentos adicionados pelo diálogo do Gerenciador de redirecionamentos.",
+	"redirectmanager-existing-redirects": "Redirecionamentos existentes para $1:",
+	"redirectmanager-no-redirects-found": "Não foi encontrado nenhum redirecionamento.",
+	"redirectmanager-copy-to-clipboard": "Copiar",
+	"redirectmanager-copied-to-clipboard": "Copiado!",
+	"redirectmanager-insert": "Inserir",
+	"redirectmanager-delete-redirect": "Excluir",
+	"redirectmanager-api-error": "Ocorreu um erro."
+}
