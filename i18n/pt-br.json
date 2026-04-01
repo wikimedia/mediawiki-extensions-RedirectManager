@@ -13,6 +13,7 @@
 	"redirectmanager-newredirect-button": "Adicionar",
 	"redirectmanager-redirect-page-invalid": "O redirecionamento solicitado não é um título de página válido. Introduza um título diferente, por favor.",
 	"redirectmanager-redirect-page-exists": "O redirecionamento pedido já existe. Edite-o manualmente, por favor.",
+	"redirectmanager-invalid-target": "O destino pedido deste redirecionamento ('$1') não é um título de página válido.",
 	"redirectmanager-no-target": "O destino solicitado deste redirecionamento ('$1') não existe.",
 	"redirectmanager-edit-summary": "Redirecionamento adicionado através do diálogo do Gerenciador de redirecionamentos.",
 	"tag-redirectmanager": "Gerenciador de Redirecionamentos",
