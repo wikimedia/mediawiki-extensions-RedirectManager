@@ -100,7 +100,7 @@ RedirectManager.prototype.addRedirect = function () {
 		this.newRedirectInput.focus();
 		return;
 	}
-	( new mw.Api() ).post( {
+	( new mw.Api() ).postWithToken( 'csrf', {
 		formatversion: 2,
 		action: 'redirectmanager',
 		assert: mw.config.get( 'wgUserName' ) ? 'user' : undefined,

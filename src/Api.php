@@ -40,6 +40,13 @@ class Api extends ApiBase {
 	/**
 	 * @inheritDoc
 	 */
+	public function needsToken() {
+		return 'csrf';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
 	public function execute(): void {
 		// Get and check the redirect/source page name and permission.
 		$redirect = $this->getParameter( 'redirect' );
