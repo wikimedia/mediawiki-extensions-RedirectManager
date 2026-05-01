@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"apihelp-redirectmanager-summary": "[[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager 확장 기능]]을 사용하여 문서 넘겨주기를 관리합니다.",
+	"apihelp-redirectmanager-param-redirect": "넘겨주기의 이름, 즉 원본 문서의 이름입니다.",
+	"apihelp-redirectmanager-param-target": "넘겨줄 문서, 즉 대상 문서의 이름입니다.",
+	"apihelp-redirectmanager-example-1": "스타일 매뉴얼 바로가기를 실제 문서로 넘겨줍니다."
+}
