@@ -1,15 +1,15 @@
 {
-	"name": "RedirectManager",
+	"name": "mediawiki-redirect-manager",
 	"private": true,
 	"scripts": {
-		"test": "grunt test"
+		"test": "npm run test:scripts && npm run test:styles && npm run test:i18n",
+		"test:scripts": "eslint --cache .",
+		"test:styles": "stylelint --cache **/*.{css,less}",
+		"test:i18n": "banana-checker i18n/"
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.32.4",
-		"grunt": "1.6.2",
 		"grunt-banana-checker": "0.13.0",
-		"grunt-eslint": "24.3.0",
-		"grunt-stylelint": "0.20.1",
 		"stylelint-config-wikimedia": "0.18.0"
 	}
 }
