@@ -68,6 +68,15 @@ RedirectManager.prototype.initialize = function () {
 		this.newRedirectField.$element,
 		this.existingRedirectsField.$element
 	);
+
+	if ( mw.config.get( 'RedirectManagerPatterns' ) ) {
+		this.patternsField = new OO.ui.FieldLayout( new OO.ui.Widget(), {
+			label: mw.msg( 'redirectmanager-patterns-label' ),
+			align: 'top'
+		} );
+		this.content.$element.append( this.patternsField.$element );
+	}
+
 	this.$body.append( this.content.$element );
 };
 
@@ -145,6 +154,7 @@ RedirectManager.prototype.getSetupProcess = function ( data ) {
 		.next( function () {
 			this.newRedirectField.setErrors( [] );
 			this.refreshList();
+			this.refreshPatterns();
 		}, this );
 };
 
@@ -176,7 +186,58 @@ RedirectManager.prototype.refreshList = function () {
 			);
 		}
 		this.existingRedirectsField.getField().$element.empty().append( $out );
+		this.refreshPatterns();
 	} );
+};
+
+RedirectManager.prototype.refreshPatterns = function () {
+	if ( !this.patternsField ) {
+		return;
+	}
+	const patterns = JSON.parse( mw.config.get( 'RedirectManagerPatterns' ) );
+	const $patternsTable = $( '<table>' ).addClass( 'ext-redirectmanager-table' );
+	const patternCells = [];
+	for ( const p in patterns ) {
+		const $patternCell = $( '<td>' );
+		patternCells.push( $patternCell );
+		const useButton = new OO.ui.ButtonWidget( {
+			label: mw.msg( 'redirectmanager-pattern-use' ),
+			title: mw.msg( 'redirectmanager-pattern-use-title' ),
+			flags: [ 'progressive' ],
+			framed: false
+		} );
+		useButton.connect( this, {
+			click: () => {
+				this.newRedirectField.getField().setValue( $patternCell.text() );
+			}
+		} );
+		$patternsTable.append( $( '<tr>' ).append(
+			$( '<td>' ).append( patterns[ p ] ),
+			$patternCell,
+			$( '<td>' ).append( useButton.$element )
+		) );
+	}
+	( new mw.Api() ).get( {
+		action: 'redirectmanagerpatterns',
+		patterns: patterns
+	} ).then( ( result ) => {
+		if ( result.redirectmanagerpatterns === undefined ) {
+			return;
+		}
+		for ( const p in result.redirectmanagerpatterns.patterns ) {
+			const title = new mw.Title( result.redirectmanagerpatterns.patterns[ p ].title );
+			const titleButton = new OO.ui.ButtonWidget( {
+				href: title.getUrl( { redirect: 'no' } ),
+				target: '_base',
+				label: title.getPrefixedText(),
+				title: mw.msg( 'redirectmanager-pattern-link-title' ),
+				framed: false
+			} );
+			patternCells[ p ].append( titleButton.$element );
+		}
+	} );
+
+	this.patternsField.getField().$element.empty().append( $patternsTable );
 };
 
 /**

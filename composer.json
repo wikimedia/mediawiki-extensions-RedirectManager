@@ -33,6 +33,7 @@
 			"@phpcs",
 			"minus-x check ."
 		],
+		"phpunit": "cd ../../ && composer phpunit -- extensions/RedirectManager/tests/phpunit/",
 		"fix": [
 			"minus-x fix .",
 			"phpcbf"

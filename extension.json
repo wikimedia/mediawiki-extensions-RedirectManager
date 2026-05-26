@@ -7,7 +7,7 @@
 	"descriptionmsg": "redirectmanager-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
-	"version": "1.3.3",
+	"version": "1.4.0",
 	"requires": {
 		"MediaWiki": ">= 1.43.0"
 	},
@@ -60,6 +60,10 @@
 				"redirectmanager-newredirect-button",
 				"redirectmanager-newredirect-button-title",
 				"redirectmanager-existing-redirects",
+				"redirectmanager-patterns-label",
+				"redirectmanager-pattern-use",
+				"redirectmanager-pattern-use-title",
+				"redirectmanager-pattern-link-title",
 				"redirectmanager-no-redirects-found",
 				"redirectmanager-redirect-page-exists",
 				"redirectmanager-link-title",
@@ -81,6 +85,9 @@
 			]
 		}
 	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
 	"APIModules": {
 		"redirectmanager": {
 			"class": "MediaWiki\\Extension\\RedirectManager\\Api",
@@ -88,6 +95,12 @@
 				"ContentHandlerFactory",
 				"ContentLanguage",
 				"WikiPageFactory"
+			]
+		},
+		"redirectmanagerpatterns": {
+			"class": "MediaWiki\\Extension\\RedirectManager\\ApiRedirectManagerPatterns",
+			"services": [
+				"RedirectManager.TitlePatternResolver"
 			]
 		}
 	},

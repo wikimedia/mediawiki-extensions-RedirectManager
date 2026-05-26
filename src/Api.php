@@ -12,6 +12,8 @@ use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
+// @todo Rename this class.
+
 class Api extends ApiBase {
 	public function __construct(
 		ApiMain $main,

@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\RedirectManager;
 
+use DomainException;
 use MediaWiki\ChangeTags\Hook\ChangeTagsAllowedAddHook;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
@@ -17,6 +18,15 @@ class Hooks implements
 	/** @inheritDoc */
 	public function onEditPage__showEditForm_initial( $editor, $out ) {
 		$out->addModules( [ 'ext.RedirectManager' ] );
+		$patternsMessage = $out->msg( 'redirectmanager-patterns.json' );
+		if ( !$patternsMessage->isDisabled() ) {
+			$patternsString = $patternsMessage->plain();
+			$patterns = json_decode( $patternsString );
+			if ( $patterns === null ) {
+				throw new DomainException( 'RedirectManager error. Unable to decode JSON: ' . $patternsString );
+			}
+			$out->addJsConfigVars( 'RedirectManagerPatterns', json_encode( array_values( $patterns ) ) );
+		}
 	}
 
 	/** @inheritDoc */
