@@ -22,7 +22,7 @@
 	"redirectmanager-edit-summary": "넘겨주기 관리자 대화 상자를 통해 추가된 넘겨주기입니다.",
 	"tag-redirectmanager": "넘겨주기 관리자",
 	"tag-redirectmanager-description": "넘겨주기 관리자 대화 상자에 의해 추가된 넘겨주기입니다.",
-	"redirectmanager-existing-redirects": "기존 리디렉션은 $1 문서로 연결됩니다:",
+	"redirectmanager-existing-redirects": "기존 넘겨주기는 $1 문서로 연결됩니다:",
 	"redirectmanager-no-redirects-found": "넘겨주기가 없습니다.",
 	"redirectmanager-link-title": "넘겨주기를 새 탭에서 엽니다.",
 	"redirectmanager-copy-to-clipboard": "복사",
