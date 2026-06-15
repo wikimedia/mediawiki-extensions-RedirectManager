@@ -7,5 +7,8 @@
 	"apihelp-redirectmanager-summary": "Xestionar as redireccións a páxinas (coa [[mw:Special:MyLanguage/Extension:RedirectManager|extensión RedirectManager]]).",
 	"apihelp-redirectmanager-param-redirect": "O nome da redirección, o nome da páxina de orixe.",
 	"apihelp-redirectmanager-param-target": "A páxina á que apuntará a redirección, o nome da páxina de destino.",
-	"apihelp-redirectmanager-example-1": "Redirixir un atallo ao libro de estilo cara á súa páxina real."
+	"apihelp-redirectmanager-example-1": "Redirixir un atallo ao libro de estilo cara á súa páxina real.",
+	"apihelp-redirectmanagerpatterns-summary": "Resolver os patróns dos títulos de páxina coa [[mw:Special:MyLanguage/Extension:RedirectManager|extensión RedirectManager]].",
+	"apihelp-redirectmanagerpatterns-param-patterns": "Patróns dos título de páxina, que poden conter marcadores de posición como <code>{number}</code>, <code>{date}</code> etc.",
+	"apihelp-redirectmanagerpatterns-example-1": "Obtén un título de páxina de exemplo que contén a data de hoxe."
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dnlweijers",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"redirectmanager-desc": "De doorverwijzingen van een pagina beheren vanuit het bewerkingsformulier.",
@@ -22,6 +23,10 @@
 	"tag-redirectmanager-description": "Met het RedirectManager-dialoogvenster toegevoegde doorverwijzingen.",
 	"redirectmanager-existing-redirects": "Verwijderen doorverwijzingen naar $1",
 	"redirectmanager-no-redirects-found": "Geen omleidingen gevonden.",
+	"redirectmanager-patterns-label": "Voorgestelde doorverwijzingen:",
+	"redirectmanager-pattern-use": "Gebruiken",
+	"redirectmanager-pattern-use-title": "Gebruik dit patroon om een doorverwijzingstitel te maken.",
+	"redirectmanager-pattern-link-title": "Deze pagina in een nieuw tabblad openen.",
 	"redirectmanager-link-title": "De doorverwijzing in een nieuw tabblad openen.",
 	"redirectmanager-copy-to-clipboard": "Kopiëren",
 	"redirectmanager-copy-to-clipboard-title": "De naam van de doorverwijzing naar het klembord kopiëren.",

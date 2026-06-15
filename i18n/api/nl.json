@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"apihelp-redirectmanager-summary": "Doorverwijzingen naar pagina’s beheren (met de [[mw:Special:MyLanguage/Extension:RedirectManager|uitbreiding RedirectManager]]).",
 	"apihelp-redirectmanager-param-redirect": "De naam van de doorverwijzing, de naam van de bronpagina.",
 	"apihelp-redirectmanager-param-target": "De pagina waarnaar de doorverwijzing moet verwijzen, de naam van de bestemmingspagina.",
-	"apihelp-redirectmanager-example-1": "Een snelkoppeling naar de ''Manual of Style'' doorverwijzen naar de echte pagina ervan."
+	"apihelp-redirectmanager-example-1": "Een snelkoppeling naar de ''Manual of Style'' doorverwijzen naar de echte pagina ervan.",
+	"apihelp-redirectmanagerpatterns-summary": "Paginatitelpatronen oplossen met de [[mw:Special:MyLanguage/Extension:RedirectManager|uitbreiding RedirectManager]].",
+	"apihelp-redirectmanagerpatterns-param-patterns": "Patronen voor paginatitels, eventueel met plaatsaanduidingen zoals <code>{number}</code>, <code>{date}</code>, enz.",
+	"apihelp-redirectmanagerpatterns-example-1": "Krijg een voorbeeld van een paginatitel met de datum van vandaag."
 }
