@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Anterdc99",
+			"GuoPC",
 			"Peterxy",
 			"Peterxy12"
 		]
@@ -23,6 +24,10 @@
 	"tag-redirectmanager-description": "由重定向管理器对话框添加的重定向。",
 	"redirectmanager-existing-redirects": "现有指向到$1的重定向：",
 	"redirectmanager-no-redirects-found": "未找到重定向。",
+	"redirectmanager-patterns-label": "建议重定向：",
+	"redirectmanager-pattern-use": "使用",
+	"redirectmanager-pattern-use-title": "使用此模式构建重定向标题。",
+	"redirectmanager-pattern-link-title": "在新标签页中打开此页面。",
 	"redirectmanager-link-title": "在新标签页中打开重定向。",
 	"redirectmanager-copy-to-clipboard": "复制",
 	"redirectmanager-copy-to-clipboard-title": "将重定向名称复制到剪贴板。",

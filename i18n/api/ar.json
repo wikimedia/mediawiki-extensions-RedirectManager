@@ -7,5 +7,8 @@
 	"apihelp-redirectmanager-summary": "إدارة عمليات إعادة التوجيه إلى الصفحات (باستخدام [[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager extension]]).",
 	"apihelp-redirectmanager-param-redirect": "اسم إعادة التوجيه ، اسم الصفحة المصدر.",
 	"apihelp-redirectmanager-param-target": "الصفحة التي ستشير إليها إعادة التوجيه ، اسم الصفحة الوجهة.",
-	"apihelp-redirectmanager-example-1": "أعد توجيه اختصار دليل النمط إلى صفحته الفعلية."
+	"apihelp-redirectmanager-example-1": "أعد توجيه اختصار دليل النمط إلى صفحته الفعلية.",
+	"apihelp-redirectmanagerpatterns-summary": "قم بحل أنماط عناوين الصفحات باستخدام [[mw:Special:MyLanguage/Extension:RedirectManager|RedirectManager extension]].",
+	"apihelp-redirectmanagerpatterns-param-patterns": "أنماط عناوين الصفحات، والتي قد تحتوي اختيارياً على عناصر نائبة مثل <code>{number}</code> ، <code>{date}</code> ، إلخ.",
+	"apihelp-redirectmanagerpatterns-example-1": "احصل على مثال لعنوان صفحة يحتوي على تاريخ اليوم."
 }
