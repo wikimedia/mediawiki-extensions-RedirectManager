@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"apihelp-redirectmanager-summary": "(د [[mw:Special:MyLanguage/Extension:RedirectManager|مخگرځ‌مهاروونکي شاتاړي]]) سره د مخونو مخگرځونې مهار کړئ.",
+	"apihelp-redirectmanager-param-redirect": "د مخگرځ نوم، د سرچينې مخ نوم.",
+	"apihelp-redirectmanager-param-target": "هغه مخ چې مخگرځ به ورته اشاره وکړي، د موخې‌وړ مخ نوم.",
+	"apihelp-redirectmanager-example-1": "د لارښود ښودبڼې لنډلار مخگرځ د هغې ار مخ ته.",
+	"apihelp-redirectmanagerpatterns-summary": "(د [[mw:Special:MyLanguage/Extension:RedirectManager|مخگرځ‌مهاروونکي شاتاړي]]) سره د مخ سرليک نمونې هوارې کړئ.",
+	"apihelp-redirectmanagerpatterns-param-patterns": "د مخ سرليک نمونې، په اختياري ډول ځای‌‌نيوونکي لکه <code>{number}</code>، <code>{date}</code> او نور لري.",
+	"apihelp-redirectmanagerpatterns-example-1": "د نن ورځې نېټه‌لرونکې مخ سرليک نمونه ترلاسه کړئ."
+}
