@@ -16,6 +16,7 @@
 	"redirectmanager-redirect-page-invalid": "Error message displayed when a redirect is not a valid page title.",
 	"redirectmanager-redirect-page-exists": "Error message displayed when a redirect is submitted but its page already exists.",
 	"redirectmanager-invalid-target": "Error message displayed when the target of a redirect is not a valid page title.\n\nParameters:\n\n* $1 — The (invalid) title of the requested target page.",
+	"redirectmanager-content-not-supported": "Error message displayed when a redirect is submitted for a content type that does not support redirects.\n\nParameter:\n* $1 — The name of the content type.",
 	"redirectmanager-no-target": "Warning message displayed when the target of a redirect does not exist.\n\nParameters:\n\n* $1 — The title of the requested target page.",
 	"redirectmanager-edit-summary": "Change comment used when creating a new redirect page.",
 	"tag-redirectmanager": "Name of the change tag with which edits are tagged.",

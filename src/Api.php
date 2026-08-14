@@ -82,6 +82,10 @@ class Api extends ApiBase {
 		$contentHandler = $this->contentHandlerFactory
 			->getContentHandler( $redirectTitle->getContentModel() );
 		$content = $contentHandler->makeRedirectContent( $targetTitle );
+		if ( !$content ) {
+			$this->addError( $this->msg( 'redirectmanager-content-not-supported', $redirectTitle->getContentModel() ) );
+			return;
+		}
 		$pageUpdater = $this->wikiPageFactory
 			->newFromTitle( $redirectTitle )
 			->newPageUpdater( $this->getUser() );
