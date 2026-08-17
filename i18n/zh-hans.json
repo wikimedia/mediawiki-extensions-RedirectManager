@@ -18,6 +18,7 @@
 	"redirectmanager-redirect-page-invalid": "请求的重定向不是有效的页面标题。请输入其他标题。",
 	"redirectmanager-redirect-page-exists": "请求的重定向已存在。请手动编辑。",
 	"redirectmanager-invalid-target": "此重定向的请求目标（“$1”）不是有效的页面标题。",
+	"redirectmanager-content-not-supported": "内容类型“$1”不支持重定向。",
 	"redirectmanager-no-target": "此重定向的请求目标（“$1”）不存在。",
 	"redirectmanager-edit-summary": "通过重定向管理器对话框添加的重定向。",
 	"tag-redirectmanager": "重定向管理器",

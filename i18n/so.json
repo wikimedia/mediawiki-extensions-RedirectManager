@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"redirectmanager-desc": "Ka maamul dib u jeedinnada bogga gudaha foomka tafatirka.",
+	"redirectmanager-title": "Maareeyaha Dib u jeedinnada",
+	"redirectmanager-close": "Xir",
+	"redirectmanager-help": "Caawin",
+	"redirectmanager-help-title": "Akhri hagaha isticmaalaha",
+	"redirectmanager-newredirect-field": "Ku dar dib u jeedin cusub:",
+	"redirectmanager-newredirect-button": "Ku dar",
+	"redirectmanager-newredirect-button-title": "Abuur dib u jeedin cusub.",
+	"redirectmanager-redirect-page-invalid": "Dib u jeedinta la codsaday ma aha cinwaan bog oo sax ah. Fadlan geli cinwaan kale.",
+	"redirectmanager-redirect-page-exists": "Dib u jeedinta la codsaday hore ayay u jirtaa. Fadlan gacanta ku tafatir.",
+	"redirectmanager-invalid-target": "Bartilmaameedka dib u jeedintan ('$1') ma aha cinwaan bog oo sax ah.",
+	"redirectmanager-content-not-supported": "Nooca nuxurka '$1' ma taageero dib u jeedinnada.",
+	"redirectmanager-no-target": "Bartilmaameedka dib u jeedintan ('$1') ma jiro.",
+	"redirectmanager-edit-summary": "Dib u jeedinta waxaa lagu daray wada hadalka RedirectManager.",
+	"tag-redirectmanager": "RedirectManager",
+	"tag-redirectmanager-description": "Dib u jeedinnada waxaa lagu daray wada-hadalka RedirectManager.",
+	"redirectmanager-existing-redirects": "Dib u jeedinnada jira ee ku socda $1:",
+	"redirectmanager-no-redirects-found": "Wax dib u jeedin ah lama helin.",
+	"redirectmanager-patterns-label": "Dib u jeedinnada la soo jeediyay:",
+	"redirectmanager-pattern-use": "Isticmaal",
+	"redirectmanager-pattern-use-title": "Isticmaal qaabkan si aad u samaysato cinwaan dib u jeedin ah.",
+	"redirectmanager-pattern-link-title": "Boggan ku fur tab cusub.",
+	"redirectmanager-link-title": "Dib u jeedinta ku fur tab cusub.",
+	"redirectmanager-copy-to-clipboard": "Nuqul",
+	"redirectmanager-copy-to-clipboard-title": "Magaca dib u jeedinta ku koobi sabuuradda.",
+	"redirectmanager-copied-to-clipboard": "La koobiyey!",
+	"redirectmanager-insert": "Rog",
+	"redirectmanager-insert-title": "Magaca dib u jeedinta ku dheji qoraalka.",
+	"redirectmanager-delete-redirect": "Tirtir",
+	"redirectmanager-delete-redirect-title": "Tirtir dib u jeedinta.",
+	"redirectmanager-api-error": "Khalad ayaa dhacay."
+}

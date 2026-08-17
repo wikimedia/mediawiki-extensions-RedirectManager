@@ -3,7 +3,8 @@
 		"authors": [
 			"Dnlweijers",
 			"McDutchie",
-			"Siebrand"
+			"Siebrand",
+			"Sumurai8"
 		]
 	},
 	"redirectmanager-desc": "De doorverwijzingen van een pagina beheren vanuit het bewerkingsformulier.",
@@ -17,6 +18,7 @@
 	"redirectmanager-redirect-page-invalid": "De gevraagde doorverwijzing is geen geldige paginatitel. Voer een andere titel in.",
 	"redirectmanager-redirect-page-exists": "De gevraagde doorverwijzing bestaat al. Bewerk deze handmatig.",
 	"redirectmanager-invalid-target": "Het aangevraagde doel van deze doorverwijzing (‘$1’) is geen geldige paginatitel.",
+	"redirectmanager-content-not-supported": "Inhoudstype '$1' ondersteunt geen doorverwijzingen.",
 	"redirectmanager-no-target": "Het aangevraagde doel van deze omleiding (‘$1’) bestaat niet.",
 	"redirectmanager-edit-summary": "Doorverwijzing toegevoegd via het RedirectManager-dialoogvenster.",
 	"tag-redirectmanager": "RedirectManager",

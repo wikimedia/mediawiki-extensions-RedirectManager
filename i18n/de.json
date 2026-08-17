@@ -15,6 +15,7 @@
 	"redirectmanager-redirect-page-invalid": "Die gewünschte Weiterleitung ist kein gültiger Seitentitel. Bitte gib einen anderen Titel ein.",
 	"redirectmanager-redirect-page-exists": "Die gewünschte Weiterleitung existiert bereits. Bitte bearbeite sie manuell.",
 	"redirectmanager-invalid-target": "Das angeforderte Ziel dieser Weiterleitung („$1“) ist kein gültiger Seitentitel.",
+	"redirectmanager-content-not-supported": "Der Inhaltstyp „$1“ unterstützt keine Weiterleitungen.",
 	"redirectmanager-no-target": "Das angeforderte Ziel dieser Weiterleitung („$1“) existiert nicht.",
 	"redirectmanager-edit-summary": "Weiterleitung über den Weiterleitungs-Manager-Dialog hinzugefügt.",
 	"tag-redirectmanager": "Weiterleitungs-Manager",
