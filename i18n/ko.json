@@ -18,6 +18,7 @@
 	"redirectmanager-redirect-page-invalid": "요청하신 넘겨주기는 유효한 문서 제목이 아닙니다. 다른 제목을 입력해 주세요.",
 	"redirectmanager-redirect-page-exists": "요청하신 넘겨주기가 이미 존재합니다. 수동으로 수정해 주세요.",
 	"redirectmanager-invalid-target": "이 넘겨주기의 요청 대상('$1')은 유효한 문서 제목이 아닙니다.",
+	"redirectmanager-content-not-supported": "'$1' 콘텐츠 유형은 넘겨주기를 지원하지 않습니다.",
 	"redirectmanager-no-target": "이 넘겨주기의 요청 대상('$1')이 존재하지 않습니다.",
 	"redirectmanager-edit-summary": "넘겨주기 관리자 대화 상자를 통해 추가된 넘겨주기입니다.",
 	"tag-redirectmanager": "넘겨주기 관리자",
