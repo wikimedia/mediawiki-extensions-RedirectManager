@@ -11,6 +11,7 @@
 	"redirectmanager-help-title": "Leia o manual do usuário",
 	"redirectmanager-newredirect-field": "Adicionar redirecionamento novo:",
 	"redirectmanager-newredirect-button": "Adicionar",
+	"redirectmanager-newredirect-button-title": "Crie um novo redirecionamento.",
 	"redirectmanager-redirect-page-invalid": "O redirecionamento solicitado não é um título de página válido. Introduza um título diferente, por favor.",
 	"redirectmanager-redirect-page-exists": "O redirecionamento pedido já existe. Edite-o manualmente, por favor.",
 	"redirectmanager-invalid-target": "O destino pedido deste redirecionamento ('$1') não é um título de página válido.",
@@ -20,9 +21,13 @@
 	"tag-redirectmanager-description": "Redirecionamentos adicionados pelo diálogo do Gerenciador de redirecionamentos.",
 	"redirectmanager-existing-redirects": "Redirecionamentos existentes para $1:",
 	"redirectmanager-no-redirects-found": "Não foi encontrado nenhum redirecionamento.",
+	"redirectmanager-link-title": "Abra o redirecionamento em uma nova aba.",
 	"redirectmanager-copy-to-clipboard": "Copiar",
+	"redirectmanager-copy-to-clipboard-title": "Copie o nome do redirecionamento para a área de transferência.",
 	"redirectmanager-copied-to-clipboard": "Copiado!",
 	"redirectmanager-insert": "Inserir",
+	"redirectmanager-insert-title": "Cole o nome do redirecionamento no texto.",
 	"redirectmanager-delete-redirect": "Excluir",
+	"redirectmanager-delete-redirect-title": "Exclua o redirecionamento.",
 	"redirectmanager-api-error": "Ocorreu um erro."
 }
