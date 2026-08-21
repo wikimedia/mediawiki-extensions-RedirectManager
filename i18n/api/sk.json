@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Spravovať presmerovania na stránky (pomocou [[mw:Special:MyLanguage/Extension:RedirectManager|rozšírenia RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Názov presmerovania, teda názov zdrojovej stránky.",
+	"apihelp-redirectmanager-param-target": "Stránka, na ktorú bude presmerovanie ukazovať, teda názov cieľovej stránky.",
+	"apihelp-redirectmanager-example-1": "Presmerovať skratku príručky štýlu na jej skutočnú stránku.",
+	"apihelp-redirectmanagerpatterns-summary": "Vyhodnotiť vzory názvov stránok pomocou [[mw:Special:MyLanguage/Extension:RedirectManager|rozšírenia RedirectManager]].",
+	"apihelp-redirectmanagerpatterns-param-patterns": "Vzory názvov stránok, ktoré môžu obsahovať zástupné výrazy ako <code>{number}</code>, <code>{date}</code> a podobne.",
+	"apihelp-redirectmanagerpatterns-example-1": "Získať vzorový názov stránky obsahujúci dnešný dátum."
+}

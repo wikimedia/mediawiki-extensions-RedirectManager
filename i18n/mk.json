@@ -15,6 +15,7 @@
 	"redirectmanager-redirect-page-invalid": "Побараното пренасочувања не претставува важечки насов на страница. Внесете поинаков.",
 	"redirectmanager-redirect-page-exists": "Побараното пренасочување веќе постои. Уредете го рачно.",
 	"redirectmanager-invalid-target": "Побараната цел на ова пренасочување („$1“) не претставува важечки наслов на страница.",
+	"redirectmanager-content-not-supported": "Содржинскиот тип „$1“ не поддржува пренасочувања.",
 	"redirectmanager-no-target": "Саканата цел на ова пренасочување („$1“) не постои.",
 	"redirectmanager-edit-summary": "Додадено пренасочување преку дијалогот на Управувачот со пренасочувања.",
 	"tag-redirectmanager": "Управувач со пренасочувања",
