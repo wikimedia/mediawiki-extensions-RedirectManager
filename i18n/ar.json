@@ -17,6 +17,7 @@
 	"redirectmanager-redirect-page-invalid": "إعادة التوجيه المطلوبة ليست عنوان صفحة صالحًا. الرجاء إدخال عنوان مختلف.",
 	"redirectmanager-redirect-page-exists": "إعادة التوجيه المطلوبة موجودة بالفعل. يرجى تحريره يدويًا.",
 	"redirectmanager-invalid-target": "الهدف المطلوب لإعادة التوجيه (' $1 ') ليس عنوان صفحة صالحًا.",
+	"redirectmanager-content-not-supported": "لا يدعم نوع المحتوى ' $1 ' عمليات إعادة التوجيه.",
 	"redirectmanager-no-target": "الهدف المطلوب لإعادة التوجيه (\" $1 \") غير موجود.",
 	"redirectmanager-edit-summary": "تمت إضافة إعادة التوجيه عبر مربع حوار RedirectManager.",
 	"tag-redirectmanager": "مدير التحويلات",
