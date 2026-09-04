@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Maamul dib u jeedinta bogagga (oo leh [[mw:Special:MyLanguage/Extension:RedirectManager|kordhinta RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Magaca dib u jeedinta, magaca bogga isha.",
+	"apihelp-redirectmanager-param-target": "Bogga ay dib u jeedintu ku tilmaami doonto, magaca bogga loo socdo.",
+	"apihelp-redirectmanager-example-1": "Dib u jeedi jid-gaabinta Buugga Hab dhaqanka boggiisa dhabta ah.",
+	"apihelp-redirectmanagerpatterns-summary": "Xallinta qaababka cinwaannada bogagga iyadoo la adeegsanayo [[mw:Special:MyLanguage/Extension:RedirectManager|kordhinta RedirectManager]].",
+	"apihelp-redirectmanagerpatterns-param-patterns": "Qaababka cinwaannada bogagga, oo ikhtiyaari ahaan ka koobnaan kara meeleeyayaal sida <code>{number}</code>, <code>{date}</code>, iwm.",
+	"apihelp-redirectmanagerpatterns-example-1": "Hel tusaale cinwaan bog oo ka kooban taariikhda maanta."
+}
