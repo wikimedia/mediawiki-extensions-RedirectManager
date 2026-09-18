@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-redirectmanager-summary": "Maamul dib u jeedinta bogagga (oo leh [[mw:Special:MyLanguage/Extension:RedirectManager|kordhinta RedirectManager]]).",
+	"apihelp-redirectmanager-param-redirect": "Magaca dib u jeedinta, magaca bogga isha.",
+	"apihelp-redirectmanager-param-target": "Bogga ay dib u jeedintu ku tilmaami doonto, magaca bogga loo socdo.",
+	"apihelp-redirectmanager-example-1": "Dib u jeedi jid-gaabinta Buugga Hab dhaqanka boggiisa dhabta ah."
+}
