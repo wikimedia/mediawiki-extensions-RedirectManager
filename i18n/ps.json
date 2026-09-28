@@ -15,6 +15,7 @@
 	"redirectmanager-redirect-page-invalid": "غوښتل شوی مخگرځ د مخ باوري سرليک نه دی. مهرباني وکړئ يو بل سرليک دننه کړئ.",
 	"redirectmanager-redirect-page-exists": "غوښتل شوی مخگرځ لادمخه شتون لري. مهرباني وکړئ دا په لاسي ډول سم کړئ.",
 	"redirectmanager-invalid-target": "د دې مخگرځ ('$1') غوښتل شوې موخه، باوري مخ سرليک نه دی.",
+	"redirectmanager-content-not-supported": "د '$1' منځپانگې ډول د مخگرځونو ملاړ نه کوي.",
 	"redirectmanager-no-target": "د دې مخگرځ ('$1') غوښتل شوې موخه، شتون نلري.",
 	"redirectmanager-edit-summary": "مخگرځ د مخگرځ‌مهاروونکي خبربکس له لارې ورگډ شو.",
 	"tag-redirectmanager": "مخگرځ‌مهاروونکی",
