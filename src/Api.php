@@ -60,7 +60,10 @@ class Api extends ApiBase {
 		}
 		// Redirect already exists.
 		if ( $redirectTitle->exists() ) {
-			$this->addError( 'redirectmanager-redirect-page-exists' );
+			$this->addError( $this->msg(
+				'redirectmanager-redirect-page-exists',
+				'Special:EditPage/' . $redirectTitle->getPrefixedText()
+			) );
 			return;
 		}
 		$this->checkTitleUserPermissions( $redirectTitle, 'edit' );
