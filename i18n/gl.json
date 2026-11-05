@@ -13,7 +13,7 @@
 	"redirectmanager-newredirect-button": "Engadir",
 	"redirectmanager-newredirect-button-title": "Crear unha nova redirección.",
 	"redirectmanager-redirect-page-invalid": "A redirección solicitada non é un título de páxina válido. Introduce un título diferente.",
-	"redirectmanager-redirect-page-exists": "A redirección solicitada xa existe. Edítaa manualmente.",
+	"redirectmanager-redirect-page-exists": "A redirección solicitada xa existe. [[$1|Edítaa manualmente]].",
 	"redirectmanager-invalid-target": "O destino solicitado para esta redirección («$1») non é un título de páxina válido.",
 	"redirectmanager-content-not-supported": "O tipo de contido «$1» non admite as redireccións.",
 	"redirectmanager-no-target": "O destino solicitado para esta redirección («$1») non existe.",

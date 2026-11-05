@@ -13,7 +13,7 @@
 	"redirectmanager-newredirect-button": "Ku dar",
 	"redirectmanager-newredirect-button-title": "Abuur dib u jeedin cusub.",
 	"redirectmanager-redirect-page-invalid": "Dib u jeedinta la codsaday ma aha cinwaan bog oo sax ah. Fadlan geli cinwaan kale.",
-	"redirectmanager-redirect-page-exists": "Dib u jeedinta la codsaday hore ayay u jirtaa. Fadlan gacanta ku tafatir.",
+	"redirectmanager-redirect-page-exists": "Dib u jeedinta la codsaday hore ayay u jirtaa. Fadlan [[$1|gacanta ku tafatir]].",
 	"redirectmanager-invalid-target": "Bartilmaameedka dib u jeedintan ('$1') ma aha cinwaan bog oo sax ah.",
 	"redirectmanager-content-not-supported": "Nooca nuxurka '$1' ma taageero dib u jeedinnada.",
 	"redirectmanager-no-target": "Bartilmaameedka dib u jeedintan ('$1') ma jiro.",
