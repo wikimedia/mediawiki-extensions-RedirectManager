@@ -15,7 +15,7 @@
 	"redirectmanager-newredirect-button": "أضف",
 	"redirectmanager-newredirect-button-title": "إنشاء إعادة توجيه جديدة.",
 	"redirectmanager-redirect-page-invalid": "إعادة التوجيه المطلوبة ليست عنوان صفحة صالحًا. الرجاء إدخال عنوان مختلف.",
-	"redirectmanager-redirect-page-exists": "إعادة التوجيه المطلوبة موجودة بالفعل. يرجى تحريره يدويًا.",
+	"redirectmanager-redirect-page-exists": "إعادة التوجيه المطلوبة موجودة بالفعل. يرجى [[$1|تحريره يدويا]].",
 	"redirectmanager-invalid-target": "الهدف المطلوب لإعادة التوجيه (' $1 ') ليس عنوان صفحة صالحًا.",
 	"redirectmanager-content-not-supported": "لا يدعم نوع المحتوى ' $1 ' عمليات إعادة التوجيه.",
 	"redirectmanager-no-target": "الهدف المطلوب لإعادة التوجيه (\" $1 \") غير موجود.",

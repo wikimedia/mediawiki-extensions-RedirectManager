@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
+			"LowensteinYang",
 			"Winston Sung"
 		]
 	},
@@ -14,7 +15,7 @@
 	"redirectmanager-newredirect-button": "新增",
 	"redirectmanager-newredirect-button-title": "新增重新導向。",
 	"redirectmanager-redirect-page-invalid": "請求的重新導向不是有效的頁面標題。請輸入別的標題。",
-	"redirectmanager-redirect-page-exists": "請求的重新導向已存在。請手動編輯。",
+	"redirectmanager-redirect-page-exists": "請求的重新導向已存在。請[[$1|手動編輯它]]。",
 	"redirectmanager-invalid-target": "此重新導向的請求目標（「$1」）不是有效的頁面標題。",
 	"redirectmanager-no-target": "此重新導向的請求目標（「$1」）不存在。",
 	"redirectmanager-edit-summary": "透過重新導向對話框添加的重新導向。",
